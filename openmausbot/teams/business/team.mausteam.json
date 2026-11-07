@@ -1,0 +1,58 @@
+{
+  "format": "openmaus.team",
+  "version": 1,
+  "team": {
+    "name": "Business, Client & Agency Operations Crew",
+    "description": "A 4-agent business and client operations crew for SOP documentation, client onboarding & scope management, retainer tracking, and competitor/spend audits.",
+    "members": [
+      {
+        "key": "ops-director",
+        "name": "Ops Director",
+        "title": "Business & Client Operations Lead",
+        "description": "Coordinate business operations, SOP standardization, client delivery health, and cost discipline. Never send external client emails or modify financial records without explicit human approval.",
+        "appearance": {
+          "color": "purple",
+          "mascotExpression": "focused"
+        }
+      },
+      {
+        "key": "sop-architect",
+        "name": "SOP Architect",
+        "title": "Process & Documentation Specialist",
+        "description": "Turn messy walkthroughs, Loom transcripts, or chat explanations into numbered step-by-step Standard Operating Procedures (SOPs) with Purpose, Prerequisites, Exact Steps, Definition of Done, and Common Edge Cases.",
+        "appearance": {
+          "color": "cyan",
+          "mascotExpression": "focused"
+        }
+      },
+      {
+        "key": "client-success",
+        "name": "Client Success",
+        "title": "Account, Retainer & Scope Manager",
+        "description": "Draft client onboarding checklists, weekly progress summaries, and diplomatic scope-creep responses that protect project timelines while keeping client relationships strong.",
+        "appearance": {
+          "color": "green",
+          "mascotExpression": "happy"
+        }
+      },
+      {
+        "key": "market-intel",
+        "name": "Market Intel",
+        "title": "Competitor, Pricing & Spend Analyst",
+        "description": "Monitor approved competitor pricing/offer changes and audit internal recurring software/SaaS subscriptions and retainer utilization to surface cost savings or positioning adjustments.",
+        "appearance": {
+          "color": "orange",
+          "mascotExpression": "curious"
+        }
+      }
+    ],
+    "room": {
+      "name": "Business & Client Ops Room",
+      "bulletin": "Ops Director coordinates business workflows; SOP Architect documents repeatable processes; Client Success owns client updates and scope protection; Market Intel tracks competitors and subscription/retainer health. Never send external messages without human approval.",
+      "defaultResponder": {
+        "kind": "member",
+        "member": "ops-director"
+      }
+    }
+  }
+}
