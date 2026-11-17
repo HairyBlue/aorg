@@ -4,7 +4,6 @@ An importable 4-agent social media and multi-platform content repurposing team f
 
 ## Contents
 
-- [`socials.md`](socials.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
-- [`team.mausteam.json`](team.mausteam.json) — **CLI compatibility manifest** (`openmausbot team apply ./teams/socials`).
-- [`TEAM.md`](TEAM.md) — Full 4-agent roster (`editor-in-chief`, `trend-radar`, `repurposer`, `community-desk`).
+- [`team.md`](team.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
+- [`team.mausteam.json`](team.mausteam.json) — Legacy compatibility manifest (`openmaus.team` v1); does not bundle standalone skills.
 - [`skills/`](skills/) — Standalone skill files (`content-repurposing`, `hook-and-copy-craft`, `community-engagement`).

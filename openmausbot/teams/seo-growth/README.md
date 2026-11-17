@@ -4,7 +4,6 @@ An importable 4-agent SEO, content strategy, and conversion optimization team fo
 
 ## Contents
 
-- [`seo-growth.md`](seo-growth.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
-- [`team.mausteam.json`](team.mausteam.json) — **CLI compatibility manifest** (`openmausbot team apply ./teams/seo-growth`).
-- [`TEAM.md`](TEAM.md) — Full 4-agent roster (`growth-lead`, `keyword-mapper`, `tech-seo`, `content-writer`).
+- [`team.md`](team.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
+- [`team.mausteam.json`](team.mausteam.json) — Legacy compatibility manifest (`openmaus.team` v1); does not bundle standalone skills.
 - [`skills/`](skills/) — Standalone skill files (`keyword-opportunity-map`, `technical-and-cro-audit`, `seo-content-and-briefs`).

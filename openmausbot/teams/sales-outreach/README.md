@@ -4,7 +4,6 @@ An importable 3-agent B2B lead qualification, context-first outreach, and follow
 
 ## Contents
 
-- [`sales-outreach.md`](sales-outreach.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
-- [`team.mausteam.json`](team.mausteam.json) — **CLI compatibility manifest** (`openmausbot team apply ./teams/sales-outreach`).
-- [`TEAM.md`](TEAM.md) — Full 3-agent roster (`revenue-lead`, `lead-miner`, `outreach-closer`).
+- [`team.md`](team.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
+- [`team.mausteam.json`](team.mausteam.json) — Legacy compatibility manifest (`openmaus.team` v1); does not bundle standalone skills.
 - [`skills/`](skills/) — Standalone skill files (`icp-lead-qualification`, `context-first-outreach`, `stalled-thread-recovery`).

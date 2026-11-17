@@ -4,7 +4,6 @@ An importable 4-agent workflow automation (n8n, Make, Zapier, webhooks) and stru
 
 ## Contents
 
-- [`automation-ai.md`](automation-ai.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
-- [`team.mausteam.json`](team.mausteam.json) — **CLI compatibility manifest** (`openmausbot team apply ./teams/automation-ai`).
-- [`TEAM.md`](TEAM.md) — Full 4-agent roster (`automation-architect`, `process-mapper`, `workflow-builder`, `prompt-qa`).
+- [`team.md`](team.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
+- [`team.mausteam.json`](team.mausteam.json) — Legacy compatibility manifest (`openmaus.team` v1); does not bundle standalone skills.
 - [`skills/`](skills/) — Standalone skill files (`process-to-automation-spec`, `webhook-and-workflow-build`, `structured-ai-node-qa`).

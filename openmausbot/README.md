@@ -13,15 +13,15 @@ Each folder under [`teams/`](teams/) is a self-contained department team you can
 
 | Team Folder | Agents | Team Lead | Purpose & Roster | Import File (`.md`) |
 | :--- | :---: | :--- | :--- | :--- |
-| [**`teams/engineering/`**](teams/engineering/README.md) | 9 | `tech-lead` (*Tech Lead*) | **Software Engineering Crew:** Parallel `backend`, `frontend`, and `fullstack` engineers (cross-layer & intra-layer), `scout`, `researcher`, `architect`, `qa-reviewer` (Code & OWASP Security), and `devops-guard`. | [`teams/engineering/engineering.md`](teams/engineering/engineering.md) |
-| [**`teams/assistant/`**](teams/assistant/README.md) | 6 | `concierge` (*Concierge*) | **Personal Assistant, MPOR & OnlineJobs.ph Crew:** Daily priority planner (`concierge`), **OnlineJobs.ph & Remote Job Scout (`job-scout`)**, **MPOR Reporter (`mpor-reporter`)**, `inbox-triage`, `second-brain` (Obsidian/Notion notes), and `admin-ops` (exam/device maintenance logger). | [`teams/assistant/assistant.md`](teams/assistant/assistant.md) |
-| [**`teams/content-creation/`**](teams/content-creation/README.md) | 5 | `showrunner` (*Showrunner*) | **Content Creation, Video & Production Crew:** Covers talking-head videos, YouTube long-form, screen tutorials, Shorts/Reels, carousels, and optional AI clips (`script-writer`, `visual-director` for A-roll/B-roll or AI prompts, `edit-producer`, and `growth-packager`). | [`teams/content-creation/content-creation.md`](teams/content-creation/content-creation.md) |
-| [**`teams/amazon-ops/`**](teams/amazon-ops/README.md) | 5 | `seller-lead` (*Seller Lead*) | **Amazon FBA & Seller Central Crew:** `product-scout` (ASIN & margin research), `listing-seo` (titles, 5 bullets, A+ & backend keywords), `ppc-analyst` (ACOS/TACOS & negative keywords), and `inventory-ops` (FBA restock & review root causes). | [`teams/amazon-ops/amazon-ops.md`](teams/amazon-ops/amazon-ops.md) |
-| [**`teams/socials/`**](teams/socials/README.md) | 4 | `editor-in-chief` (*Editor in Chief*) | **Social Media & Content Engine Crew:** `trend-radar` (hooks & angles), `repurposer` (1 asset -> X thread, LinkedIn, IG/FB, Short/Reel script), and `community-desk` (comment & DM reply drafts). | [`teams/socials/socials.md`](teams/socials/socials.md) |
-| [**`teams/business/`**](teams/business/README.md) | 4 | `ops-director` (*Ops Director*) | **Business, Client & Agency Ops Crew:** `sop-architect` (Loom/notes -> step-by-step SOPs), `client-success` (onboarding, weekly updates, scope guard), and `market-intel` (competitor & subscription spend audit). | [`teams/business/business.md`](teams/business/business.md) |
-| [**`teams/seo-growth/`**](teams/seo-growth/README.md) | 4 | `growth-lead` (*Growth Lead*) | **SEO, Content & Conversion Growth Crew:** `keyword-mapper` (intent clusters & striking-distance pages), `tech-seo` (indexing, schema, internal links & CRO), and `content-writer` (articles & landing pages). | [`teams/seo-growth/seo-growth.md`](teams/seo-growth/seo-growth.md) |
-| [**`teams/sales-outreach/`**](teams/sales-outreach/README.md) | 3 | `revenue-lead` (*Revenue Lead*) | **Sales, Lead Qualification & Outreach Crew:** `lead-miner` (ICP & buying-signal scoring) and `outreach-closer` (context-first cold emails/DMs & stalled thread recovery). | [`teams/sales-outreach/sales-outreach.md`](teams/sales-outreach/sales-outreach.md) |
-| [**`teams/automation-ai/`**](teams/automation-ai/README.md) | 4 | `automation-architect` (*Automation Architect*) | **Workflow Automation & AI Systems Crew:** `process-mapper` (Trigger -> Action specs), `workflow-builder` (idempotent n8n, Make, Zapier & webhooks), and `prompt-qa` (strict JSON schemas & LLM node testing). | [`teams/automation-ai/automation-ai.md`](teams/automation-ai/automation-ai.md) |
+| [**`teams/engineering/`**](teams/engineering/README.md) | 9 | `tech-lead` (*Tech Lead*) | **Software Engineering Crew:** Parallel `backend`, `frontend`, and `fullstack` engineers (cross-layer & intra-layer), `scout`, `researcher`, `architect`, `qa-reviewer` (Code & OWASP Security), and `devops-guard`. | [`teams/engineering/team.md`](teams/engineering/team.md) |
+| [**`teams/assistant/`**](teams/assistant/README.md) | 7 | `concierge` (*Concierge*) | **Personal Assistant, MPOR & OnlineJobs.ph Crew:** Daily priority planner (`concierge`), **OnlineJobs.ph & Remote Job Scout (`job-scout`)**, **MPOR/SPOR Reporter (`mpor-reporter`)**, **Daily Progress Reporter (`daily-progress-reporter`)**, `inbox-triage`, `second-brain` (Obsidian/Notion notes), and `admin-ops` (exam/device maintenance logger). | [`teams/assistant/team.md`](teams/assistant/team.md) |
+| [**`teams/content-creation/`**](teams/content-creation/README.md) | 5 | `showrunner` (*Showrunner*) | **Content Creation, Video & Production Crew:** Covers talking-head videos, YouTube long-form, screen tutorials, Shorts/Reels, carousels, and optional AI clips (`script-writer`, `visual-director` for A-roll/B-roll or AI prompts, `edit-producer`, and `growth-packager`). | [`teams/content-creation/team.md`](teams/content-creation/team.md) |
+| [**`teams/amazon-ops/`**](teams/amazon-ops/README.md) | 5 | `seller-lead` (*Seller Lead*) | **Amazon FBA & Seller Central Crew:** `product-scout` (ASIN & margin research), `listing-seo` (titles, 5 bullets, A+ & backend keywords), `ppc-analyst` (ACOS/TACOS & negative keywords), and `inventory-ops` (FBA restock & review root causes). | [`teams/amazon-ops/team.md`](teams/amazon-ops/team.md) |
+| [**`teams/socials/`**](teams/socials/README.md) | 4 | `editor-in-chief` (*Editor in Chief*) | **Social Media & Content Engine Crew:** `trend-radar` (hooks & angles), `repurposer` (1 asset -> X thread, LinkedIn, IG/FB, Short/Reel script), and `community-desk` (comment & DM reply drafts). | [`teams/socials/team.md`](teams/socials/team.md) |
+| [**`teams/business/`**](teams/business/README.md) | 4 | `ops-director` (*Ops Director*) | **Business, Client & Agency Ops Crew:** `sop-architect` (Loom/notes -> step-by-step SOPs), `client-success` (onboarding, weekly updates, scope guard), and `market-intel` (competitor & subscription spend audit). | [`teams/business/team.md`](teams/business/team.md) |
+| [**`teams/seo-growth/`**](teams/seo-growth/README.md) | 4 | `growth-lead` (*Growth Lead*) | **SEO, Content & Conversion Growth Crew:** `keyword-mapper` (intent clusters & striking-distance pages), `tech-seo` (indexing, schema, internal links & CRO), and `content-writer` (articles & landing pages). | [`teams/seo-growth/team.md`](teams/seo-growth/team.md) |
+| [**`teams/sales-outreach/`**](teams/sales-outreach/README.md) | 3 | `revenue-lead` (*Revenue Lead*) | **Sales, Lead Qualification & Outreach Crew:** `lead-miner` (ICP & buying-signal scoring) and `outreach-closer` (context-first cold emails/DMs & stalled thread recovery). | [`teams/sales-outreach/team.md`](teams/sales-outreach/team.md) |
+| [**`teams/automation-ai/`**](teams/automation-ai/README.md) | 4 | `automation-architect` (*Automation Architect*) | **Workflow Automation & AI Systems Crew:** `process-mapper` (Trigger -> Action specs), `workflow-builder` (idempotent n8n, Make, Zapier & webhooks), and `prompt-qa` (strict JSON schemas & LLM node testing). | [`teams/automation-ai/team.md`](teams/automation-ai/team.md) |
 
 ---
 
@@ -51,7 +51,7 @@ You are the single global Chief of Staff for this workspace. Communicate concise
 
 ## Bot Avatar Shapes & Colors (`Bot` Picker Guide)
 
-When you import a `<team>.md` file, OpenMausBot automatically sets each bot's **color** from the file (`green`, `blue`, `red`, `orange`, `purple`, `cyan`, `pink`, `yellow`), while defaulting the mascot shape to **#1 Cursor**.
+When you import a `team.md` file, OpenMausBot automatically sets each bot's **color** from the file (`green`, `blue`, `red`, `orange`, `purple`, `cyan`, `pink`, `yellow`), while defaulting the mascot shape to **#1 Cursor**.
 
 If you want each bot to have a distinct shape in the **Bot Avatar Picker** (Row 1 = `#1–#5`, Row 2 = `#6–#10`), here is the recommended mapping:
 
@@ -73,16 +73,17 @@ If you want each bot to have a distinct shape in the **Bot Avatar Picker** (Row 
 
 ### 1. OpenMausBot Desktop (`Teams -> Import`) — Fastest
 1. In OpenMausBot, open **Teams -> Import**.
-2. Select any team's `<team>.md` file under [`teams/<team>/<team>.md`](teams/) (or paste its raw GitHub URL).
+2. Select any team's `team.md` file under [`teams/<team>/team.md`](teams/) (or paste its raw GitHub URL).
 3. Review the preview and click **Import**.
 
 ### 2. Give the Blueprint to Your Default Chief of Staff
-Attach any `<team>.md` file directly in chat with your default Chief of Staff.
+Attach any `team.md` file directly in chat with your default Chief of Staff.
 
-### 3. OpenMausBot CLI (`openmausbot team apply`)
-```bash
-openmausbot team apply ./teams/<team-name>
-```
+### 3. Legacy compatibility and skills
+
+Each folder retains `team.mausteam.json` for legacy importers. The current CLI's YAML/JSON team-file schema is different; do not assume `team apply <directory>` accepts this legacy pack.
+
+The lowercase `team.md` packages currently retain **BotMRR v1**. Renaming them does not convert them to v2 or automatically install adjacent standalone skills. Use the **Import** flow, not the **From a folder** project-scouting tab.
 
 ---
 

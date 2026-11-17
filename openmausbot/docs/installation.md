@@ -11,7 +11,7 @@ When you first install OpenMausBot, it creates a single default **Chief of Staff
 2. Paste the [**Default Chief of Staff Instructions**](../README.md#default-chief-of-staff-instructions) from `openmausbot/README.md`.
 3. Under **Before acting**, choose **Ask me first** (or **Decide for me**).
 
-*(Note: You do **not** need to manually paste instructions into imported team bots—OpenMausBot automatically populates each imported bot's instructions from its `<team>.md` file.)*
+*(Note: You do **not** need to manually paste instructions into imported team bots—OpenMausBot automatically populates each imported bot's instructions from its `team.md` file.)*
 
 ---
 
@@ -20,29 +20,28 @@ When you first install OpenMausBot, it creates a single default **Chief of Staff
 ### Method 1: OpenMausBot Desktop UI (`Teams -> Import`) — Recommended
 
 Each team folder under [`teams/`](../teams/) includes a single-file BotMRR v1 `.md` playbook:
-- **Software Engineering Crew (9 agents):** [`teams/engineering/engineering.md`](../teams/engineering/engineering.md)
-- **Personal Assistant, MPOR & OnlineJobs.ph Crew (6 agents):** [`teams/assistant/assistant.md`](../teams/assistant/assistant.md)
-- **Content Creation, Video & Production Crew (5 agents):** [`teams/content-creation/content-creation.md`](../teams/content-creation/content-creation.md)
-- **Amazon FBA & Seller Central Crew (5 agents):** [`teams/amazon-ops/amazon-ops.md`](../teams/amazon-ops/amazon-ops.md)
-- **Social Media & Content Engine Crew (4 agents):** [`teams/socials/socials.md`](../teams/socials/socials.md)
-- **Business, Client & Agency Ops Crew (4 agents):** [`teams/business/business.md`](../teams/business/business.md)
-- **SEO, Content & Conversion Growth Crew (4 agents):** [`teams/seo-growth/seo-growth.md`](../teams/seo-growth/seo-growth.md)
-- **Sales, Lead Qualification & Outreach Crew (3 agents):** [`teams/sales-outreach/sales-outreach.md`](../teams/sales-outreach/sales-outreach.md)
-- **Workflow Automation & AI Systems Crew (4 agents):** [`teams/automation-ai/automation-ai.md`](../teams/automation-ai/automation-ai.md)
+- **Software Engineering Crew (9 agents):** [`teams/engineering/team.md`](../teams/engineering/team.md)
+- **Personal Assistant, MPOR & OnlineJobs.ph Crew (7 agents):** [`teams/assistant/team.md`](../teams/assistant/team.md)
+- **Content Creation, Video & Production Crew (5 agents):** [`teams/content-creation/team.md`](../teams/content-creation/team.md)
+- **Amazon FBA & Seller Central Crew (5 agents):** [`teams/amazon-ops/team.md`](../teams/amazon-ops/team.md)
+- **Social Media & Content Engine Crew (4 agents):** [`teams/socials/team.md`](../teams/socials/team.md)
+- **Business, Client & Agency Ops Crew (4 agents):** [`teams/business/team.md`](../teams/business/team.md)
+- **SEO, Content & Conversion Growth Crew (4 agents):** [`teams/seo-growth/team.md`](../teams/seo-growth/team.md)
+- **Sales, Lead Qualification & Outreach Crew (3 agents):** [`teams/sales-outreach/team.md`](../teams/sales-outreach/team.md)
+- **Workflow Automation & AI Systems Crew (4 agents):** [`teams/automation-ai/team.md`](../teams/automation-ai/team.md)
 
 Steps:
 1. Open **OpenMausBot** and navigate to **Teams -> Import**.
-2. Select any `<team>.md` file from your local disk (or paste its raw GitHub URL).
+2. Select any `team.md` file from your local disk (or paste its raw GitHub URL).
 3. Review the preview (Team Lead, specialist bots, shared rooms, playbooks, and paused routines) and click **Import**.
 
 ---
 
-### Method 2: CLI Compatibility Directory (`openmausbot team apply`)
+### Legacy compatibility and standalone skills
 
-```bash
-openmausbot team apply /path/to/aorg/openmausbot/teams/engineering
-openmausbot team apply /path/to/aorg/openmausbot/teams/assistant
-```
+The `team.mausteam.json` files are retained for legacy importers. They do not automatically install the adjacent `skills/` folders. Current `openmausbot team apply` uses its own YAML/JSON team-file schema; these packs have not been converted to that schema.
+
+The renamed `team.md` packages still use **BotMRR v1**, with embedded playbooks. A filename change is not a v2 conversion or proof of standalone skill installation. Use the **Import** tab; **From a folder** scouts a project and suggests bots rather than importing the defined roster.
 
 ---
 

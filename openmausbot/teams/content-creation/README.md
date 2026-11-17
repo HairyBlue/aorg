@@ -6,7 +6,6 @@ Supports **all content formats**—talking-head videos, YouTube long-form, scree
 
 ## Contents
 
-- [`content-creation.md`](content-creation.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
-- [`team.mausteam.json`](team.mausteam.json) — **CLI compatibility manifest** (`openmausbot team apply ./teams/content-creation`).
-- [`TEAM.md`](TEAM.md) — Full 5-agent roster (`showrunner`, `script-writer`, `visual-director`, `edit-producer`, `growth-packager`).
+- [`team.md`](team.md) — **BotMRR v1 single-file import package** (`Teams -> Import`).
+- [`team.mausteam.json`](team.mausteam.json) — Legacy compatibility manifest (`openmaus.team` v1); does not bundle standalone skills.
 - [`skills/`](skills/) — Standalone skill files (`hook-and-scriptwriting`, `storyboard-and-visual-direction`, `audio-and-edit-timeline`, `thumbnail-title-and-packaging`).
