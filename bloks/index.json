@@ -1,0 +1,818 @@
+{
+  "bloksCatalog": 1,
+  "items": [
+    {
+      "id": "amazon-ops",
+      "kind": "team",
+      "title": "Amazon FBA & Seller Central Operations Crew",
+      "summary": "Research winning ASINs, optimize listings, cut wasted PPC spend, and protect FBA inventory health.",
+      "tags": [
+        "amazon-ops",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "orange",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        },
+        {
+          "color": "green",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/amazon-ops.md",
+      "size": 4340,
+      "sha256": "db83b50dd89341d49af67c88b7797b45250eb924f3bb52036b9f67c73e49faf2"
+    },
+    {
+      "id": "assistant",
+      "kind": "team",
+      "title": "Personal Assistant and Career",
+      "summary": "Coordinates daily priorities, general progress and Kanban drafts, prescribed MPOR/SPOR reports, inbox, notes, admin tasks, and job research.",
+      "tags": [
+        "assistant",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "green",
+          "shape": "diamond"
+        },
+        {
+          "color": "pink",
+          "shape": "drop"
+        },
+        {
+          "color": "green",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/assistant.md",
+      "size": 7965,
+      "sha256": "cae5331e09b8fd459755cf84fa7a72321f610ad02d0f6e0ed3356799f61310c3"
+    },
+    {
+      "id": "automation-ai",
+      "kind": "team",
+      "title": "Workflow Automation & AI Systems Crew",
+      "summary": "Map manual bottlenecks and build reliable n8n, Make, Zapier, webhook, and AI agent workflows.",
+      "tags": [
+        "automation-ai",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "green",
+          "shape": "bit"
+        },
+        {
+          "color": "orange",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/automation-ai.md",
+      "size": 3328,
+      "sha256": "7b85d1941bf1edf848e8df652b91be6eace85ef00f57255ba2148ee6b09d7b7a"
+    },
+    {
+      "id": "business",
+      "kind": "team",
+      "title": "Business, Client & Agency Operations Crew",
+      "summary": "Document SOPs, keep client retainers on track, watch competitors, and audit recurring expenses.",
+      "tags": [
+        "business",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        },
+        {
+          "color": "green",
+          "shape": "bit"
+        },
+        {
+          "color": "orange",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/business.md",
+      "size": 3251,
+      "sha256": "9f7cc4e7ea906094db02e87cef8bd208a802db6d887ccbdfbfcecae3ea2e92e7"
+    },
+    {
+      "id": "content-creation",
+      "kind": "team",
+      "title": "Content Creation, Video & Production Crew",
+      "summary": "Plan, script, storyboard, edit, and package long-form videos, Shorts/Reels, tutorials, carousels, and AI clips.",
+      "tags": [
+        "content-creation",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        },
+        {
+          "color": "orange",
+          "shape": "bit"
+        },
+        {
+          "color": "green",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/content-creation.md",
+      "size": 4564,
+      "sha256": "2f183241f4bd35466fc139cea117c88ab9c10005ed4fc6d6af090c24d832529d"
+    },
+    {
+      "id": "engineering",
+      "kind": "team",
+      "title": "Software Engineering",
+      "summary": "Builds software with scoped parallel work, clear file ownership, and verified results. Independent QA and release review live in Engineering Review.",
+      "tags": [
+        "engineering",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        },
+        {
+          "color": "yellow",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/engineering.md",
+      "size": 7616,
+      "sha256": "614cad57b8fc5de4c6e5eb8e912c08d9ff032a6874cc3ab9010804694841d267"
+    },
+    {
+      "id": "engineering-review",
+      "kind": "team",
+      "title": "Engineering Review",
+      "summary": "Independent read-only code, security, Git safety, and release-readiness reviews. Reviews work from Software Engineering without authoring its changes.",
+      "tags": [
+        "engineering",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "orange",
+          "shape": "diamond"
+        },
+        {
+          "color": "red",
+          "shape": "invader"
+        }
+      ],
+      "path": "teams/engineering-review.md",
+      "size": 2439,
+      "sha256": "a693012aa5f7ca2cf6067da0704161b0d6de69f0bf969910241ccf619d21605a"
+    },
+    {
+      "id": "sales-outreach",
+      "kind": "team",
+      "title": "Sales, Lead Qualification & Outreach Crew",
+      "summary": "Qualify high-intent leads, write context-first outreach, and recover quiet sales threads.",
+      "tags": [
+        "sales-outreach",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "green",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "orange",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/sales-outreach.md",
+      "size": 2483,
+      "sha256": "c02bfe075c127799aed28051a8621e35d05a41b5049a3b6103cd055cebf78d61"
+    },
+    {
+      "id": "seo-growth",
+      "kind": "team",
+      "title": "SEO, Content & Conversion Growth Crew",
+      "summary": "Find high-intent keyword gaps, fix technical SEO bottlenecks, and ship high-converting pages.",
+      "tags": [
+        "seo-growth",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "green",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "orange",
+          "shape": "bit"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/seo-growth.md",
+      "size": 3129,
+      "sha256": "913ed22d3d08b8bbcea114a521b278b145240a4e20c3086f6e6b409d1baf925d"
+    },
+    {
+      "id": "socials",
+      "kind": "team",
+      "title": "Social Media & Content Engine Crew",
+      "summary": "Turn one core idea, video, or update into high-signal posts across X, LinkedIn, FB/IG, and Shorts.",
+      "tags": [
+        "socials",
+        "aorg"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "faces": [
+        {
+          "color": "purple",
+          "shape": "star"
+        },
+        {
+          "color": "blue",
+          "shape": "bit"
+        },
+        {
+          "color": "cyan",
+          "shape": "bit"
+        },
+        {
+          "color": "pink",
+          "shape": "bit"
+        }
+      ],
+      "path": "teams/socials.md",
+      "size": 3177,
+      "sha256": "0f6c54f0d9e993d62916419b6b530be6a57bfcbb56484ef9b73bee985fa6fdaa"
+    },
+    {
+      "id": "asin-and-competitor-research",
+      "kind": "skill",
+      "title": "ASIN, Competitor & Margin Research",
+      "summary": "Evaluate competitor ASINs, customer pain points, and net FBA unit economics.",
+      "tags": [
+        "amazon-ops",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/asin-and-competitor-research/SKILL.md",
+      "size": 1314,
+      "sha256": "f4c3b005b2afec32a5d3247be758edf26a707eb4ec107585bf22098e1bf794ad"
+    },
+    {
+      "id": "audio-and-edit-timeline",
+      "kind": "skill",
+      "title": "CapCut / Premiere Edit Timeline & Audio/SFX Guide",
+      "summary": "Specify cut pacing, B-roll overlays, music shifts, SFX cues, and caption styles.",
+      "tags": [
+        "content-creation",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/audio-and-edit-timeline/SKILL.md",
+      "size": 1283,
+      "sha256": "0b181680fc3a85d509e15d204b90096580acb8ab25ddaf8e4deead777d796c9e"
+    },
+    {
+      "id": "client-delivery-and-scope",
+      "kind": "skill",
+      "title": "Client Status Update & Scope Guard",
+      "summary": "Draft clear weekly client updates and polite change-request options when out-of-scope requests arrive.",
+      "tags": [
+        "business",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/client-delivery-and-scope/SKILL.md",
+      "size": 1298,
+      "sha256": "c7227276796366470a55827773f92ea0b25c71f7dab14cc49cf43c7e839a7a0b"
+    },
+    {
+      "id": "code-and-security-review",
+      "kind": "skill",
+      "title": "Independent Code Quality & Security Audit",
+      "summary": "Audit uncommitted diffs for simplicity, runtime safety, OWASP vulnerabilities, and git guardrails.",
+      "tags": [
+        "engineering",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/code-and-security-review/SKILL.md",
+      "size": 2382,
+      "sha256": "f43a70c18d8dc6c5a96b281f802ea34399732bc85b9fcd1e2a13e085b29f65d1"
+    },
+    {
+      "id": "community-engagement",
+      "kind": "skill",
+      "title": "Community Comment & DM Triage",
+      "summary": "Draft thoughtful, non-spammy replies to high-value comments and inbound DMs.",
+      "tags": [
+        "socials",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/community-engagement/SKILL.md",
+      "size": 1178,
+      "sha256": "0327d18dddf8557df15c3278e0fb252583b0ce5d2e01d6f65899c9a557c62cf2"
+    },
+    {
+      "id": "competitor-and-spend-audit",
+      "kind": "skill",
+      "title": "Competitor Offer & Subscription Spend Audit",
+      "summary": "Track material competitor changes and flag unused or duplicate recurring expenses.",
+      "tags": [
+        "business",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/competitor-and-spend-audit/SKILL.md",
+      "size": 1214,
+      "sha256": "c212fcf73d02c358e0e2f72507e7da12142bcb7601a867ef379298b705f3a51d"
+    },
+    {
+      "id": "content-repurposing",
+      "kind": "skill",
+      "title": "1-to-Many Content Repurposing",
+      "summary": "Turn one source asset into native X, LinkedIn, IG/FB, and Short/Reel drafts.",
+      "tags": [
+        "socials",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/content-repurposing/SKILL.md",
+      "size": 1283,
+      "sha256": "4c4f378e2de364c9aed0247f0d22543c032df56df32a908af2423ff85b386a83"
+    },
+    {
+      "id": "context-first-outreach",
+      "kind": "skill",
+      "title": "Context-First Outreach Drafter",
+      "summary": "Write short, human outreach grounded in a real observation.",
+      "tags": [
+        "sales-outreach",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/context-first-outreach/SKILL.md",
+      "size": 1188,
+      "sha256": "f5829cf1487eb9036cf6f0945c87218a982ed162d2066602707a75fd770cbdf0"
+    },
+    {
+      "id": "daily-progress-report",
+      "kind": "skill",
+      "title": "General Progress Report",
+      "summary": "Draft general daily, weekly, monthly, or custom progress reports, with optional Trello/Kanban card titles and descriptions. Use mpor-report for prescribed workplace MPOR/SPOR forms.",
+      "tags": [
+        "assistant",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/daily-progress-report/SKILL.md",
+      "size": 8432,
+      "sha256": "ad44ea2fc430e0c0d30e9ac42abfdfa5d2461f665d32e749544c0d39aa2f767b"
+    },
+    {
+      "id": "fba-inventory-and-reviews",
+      "kind": "skill",
+      "title": "FBA Restock Math & Review Root-Cause Triage",
+      "summary": "Prevent stockouts, flag stranded SKUs, and turn customer return/review patterns into product or copy fixes.",
+      "tags": [
+        "amazon-ops",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/fba-inventory-and-reviews/SKILL.md",
+      "size": 1380,
+      "sha256": "91f1b0ee53d8355e623fdd40a566a653759af30ca33333fa2506771f37c63eb7"
+    },
+    {
+      "id": "hook-and-copy-craft",
+      "kind": "skill",
+      "title": "Anti-AI-Slop Hook & Copy Craft",
+      "summary": "Write sharp, human-sounding hooks and social posts with zero corporate filler.",
+      "tags": [
+        "socials",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/hook-and-copy-craft/SKILL.md",
+      "size": 1219,
+      "sha256": "d1d61a75ce693714266de7a58e5d1b686161670e843e5ddd8e9185d27cf009b2"
+    },
+    {
+      "id": "hook-and-scriptwriting",
+      "kind": "skill",
+      "title": "Long-Form & Short-Form Scriptwriting",
+      "summary": "Write high-retention scripts for talking-head videos, YouTube tutorials, podcasts, carousels, or 15-60s Shorts.",
+      "tags": [
+        "content-creation",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/hook-and-scriptwriting/SKILL.md",
+      "size": 1390,
+      "sha256": "de8a25acd198632c57114496a2fa88f9d763df82c42678eefedc7b76b9abf683"
+    },
+    {
+      "id": "icp-lead-qualification",
+      "kind": "skill",
+      "title": "ICP Lead & Signal Qualification",
+      "summary": "Score prospects against your ICP using concrete public evidence.",
+      "tags": [
+        "sales-outreach",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/icp-lead-qualification/SKILL.md",
+      "size": 1139,
+      "sha256": "173fe01905746a5d0730975260f2892813905437ef448bf601ee127973daff02"
+    },
+    {
+      "id": "inbox-and-notes-triage",
+      "kind": "skill",
+      "title": "Inbox Triage, Reply Drafter & Second-Brain Notes",
+      "summary": "Filter emails/messages into actionable replies and distill rough notes or articles into clean local Markdown.",
+      "tags": [
+        "assistant",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/inbox-and-notes-triage/SKILL.md",
+      "size": 2070,
+      "sha256": "b32c07b20a5b68966eb0f913dd76e4bec17fff0cd0f81d4afdc875f882b629c3"
+    },
+    {
+      "id": "job-hunt-onlinejobs",
+      "kind": "skill",
+      "title": "OnlineJobs.ph & Remote Job Scout + Proposal Drafter",
+      "summary": "Scout OnlineJobs.ph and remote job listings, catch hidden attention checks and red flags, and draft tailored proposals.",
+      "tags": [
+        "assistant",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/job-hunt-onlinejobs/SKILL.md",
+      "size": 2774,
+      "sha256": "ed81caa74ee9f7cd329a1f7408bafef9f94a6954b5863f9a58140c45a9e6e1d3"
+    },
+    {
+      "id": "keyword-opportunity-map",
+      "kind": "skill",
+      "title": "Search-Intent Keyword & Cannibalization Map",
+      "summary": "Group keywords by intent and assign one target URL per cluster.",
+      "tags": [
+        "seo-growth",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/keyword-opportunity-map/SKILL.md",
+      "size": 1168,
+      "sha256": "23f45f6d7d87507e6115a4f45e2c2a18258edd3adf70c36fdeb8634e67ea5ecb"
+    },
+    {
+      "id": "listing-seo-and-keywords",
+      "kind": "skill",
+      "title": "Listing SEO, Bullets & Backend Keywords",
+      "summary": "Write TOS-safe titles, bullets, A+ modules, and backend search terms mapped to buyer intent.",
+      "tags": [
+        "amazon-ops",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/listing-seo-and-keywords/SKILL.md",
+      "size": 1337,
+      "sha256": "9ccd132240a6893bb8db028e98e0873a36eb568ee69c3665f9e9f0f9abb61cc8"
+    },
+    {
+      "id": "mpor-progress-report",
+      "kind": "skill",
+      "title": "MPOR / SPOR Workplace Report",
+      "summary": "Prepare workplace MPOR/SPOR drafts using supplied office templates, selected rows, and progress-based Efficiency counts with a transparent breakdown. Supports daily, weekly, monthly, and custom report",
+      "tags": [
+        "assistant",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/mpor-progress-report/SKILL.md",
+      "size": 12371,
+      "sha256": "54032c9564d68f7ca94d610136221090faf074a5c5dc9b30b4ca3489f1c600b1"
+    },
+    {
+      "id": "parallel-crew-dispatch",
+      "kind": "skill",
+      "title": "Cross-Layer & Intra-Layer Parallel Dispatch",
+      "summary": "Split work across multiple concurrent Backend, Frontend, and Full-Stack engineers with zero file collisions.",
+      "tags": [
+        "engineering",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/parallel-crew-dispatch/SKILL.md",
+      "size": 2739,
+      "sha256": "ae67754b424b7f27f2ac0c0928c8ec71b056480f867e74fa80a33d2df5d7e34d"
+    },
+    {
+      "id": "personal-day-planning",
+      "kind": "skill",
+      "title": "Personal Day Planning & Non-Coding Ops Log",
+      "summary": "Turn messy brain dumps, schedules, and device/exam admin tasks into a calm Top-3 daily plan and verified ops log.",
+      "tags": [
+        "assistant",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/personal-day-planning/SKILL.md",
+      "size": 2057,
+      "sha256": "9e110ae589c65ef817a1ceb9cfb12bb9dec0ee76fc8d9e5321a076ba2f8d98cd"
+    },
+    {
+      "id": "ppc-wasted-spend-audit",
+      "kind": "skill",
+      "title": "PPC Wasted-Spend & Search-Term Audit",
+      "summary": "Cut zero-order ad waste, harvest winning search terms, and align bids with target ACOS/TACOS.",
+      "tags": [
+        "amazon-ops",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/ppc-wasted-spend-audit/SKILL.md",
+      "size": 1316,
+      "sha256": "92904128da023d4c542e59ba4107309920639a9f77590cbad167fa93b89f2dbc"
+    },
+    {
+      "id": "pragmatic-engineering",
+      "kind": "skill",
+      "title": "Pragmatic Anti-Overengineering & Direct Verification",
+      "summary": "Ship the smallest, safest working diff verified by deterministic build, typecheck, and lint checks.",
+      "tags": [
+        "engineering",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/pragmatic-engineering/SKILL.md",
+      "size": 1959,
+      "sha256": "de0fa74d9c90f3e266d5e581fe816d5c3326443732c9012030964f3f14a63edf"
+    },
+    {
+      "id": "process-to-automation-spec",
+      "kind": "skill",
+      "title": "Manual Process to Automation Blueprint",
+      "summary": "Turn a manual task into a concrete Trigger -> Transform -> Action specification.",
+      "tags": [
+        "automation-ai",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/process-to-automation-spec/SKILL.md",
+      "size": 1233,
+      "sha256": "9af058e7da10af6760d0f4507a2d6476914db4f58ddac8b666c7d7bf7d8523b1"
+    },
+    {
+      "id": "seo-content-and-briefs",
+      "kind": "skill",
+      "title": "Intent-First SEO Content Brief & Article Drafter",
+      "summary": "Build outlines and articles that beat top SERP results with real substance.",
+      "tags": [
+        "seo-growth",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/seo-content-and-briefs/SKILL.md",
+      "size": 1238,
+      "sha256": "61f68b7373fda2c0cc1d0e72c38fe419850c01eab856a2d866540cb34ba663f1"
+    },
+    {
+      "id": "sop-and-process-builder",
+      "kind": "skill",
+      "title": "Step-by-Step SOP & Checklist Builder",
+      "summary": "Convert rough transcripts or notes into a reusable SOP with clear ownership and verification.",
+      "tags": [
+        "business",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/sop-and-process-builder/SKILL.md",
+      "size": 1244,
+      "sha256": "451aec8f91fc857c59d3bdd2366b613e5a19ada609fcc4ed91551ae456eb57be"
+    },
+    {
+      "id": "stalled-thread-recovery",
+      "kind": "skill",
+      "title": "Stalled Thread & Follow-Up Recovery",
+      "summary": "Re-open quiet conversations with a useful next step instead of 'just bumping this'.",
+      "tags": [
+        "sales-outreach",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/stalled-thread-recovery/SKILL.md",
+      "size": 1193,
+      "sha256": "8cf5dd85ce3e98bda862e7a322ad58cc1bc7233f16e625bb7de4ed3f3edd8d6d"
+    },
+    {
+      "id": "storyboard-and-visual-direction",
+      "kind": "skill",
+      "title": "A-Roll / B-Roll Storyboard & Optional AI Visual Prompts",
+      "summary": "Map camera shots, B-roll, screen captures, graphics, or AI image/video prompts for each script beat.",
+      "tags": [
+        "content-creation",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/storyboard-and-visual-direction/SKILL.md",
+      "size": 1477,
+      "sha256": "7b9476f1ef2ab5c2f6f3a708242a9b6b6162156d3aad18b5e47ebe83100bcdfb"
+    },
+    {
+      "id": "structured-ai-node-qa",
+      "kind": "skill",
+      "title": "Structured LLM Node & Prompt Hardening",
+      "summary": "Lock down AI workflow steps with strict JSON schemas and untrusted-input guardrails.",
+      "tags": [
+        "automation-ai",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/structured-ai-node-qa/SKILL.md",
+      "size": 1245,
+      "sha256": "f8da2dfd7ff9674d7d1bac8f985344615bcf7c3b447be0b971a89de4b71b4ead"
+    },
+    {
+      "id": "team-orchestration",
+      "kind": "skill",
+      "title": "Engineering Orchestration & Synthesis",
+      "summary": "Coordinate alignment, file-boundary mapping, parallel implementation, and verification.",
+      "tags": [
+        "engineering",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/team-orchestration/SKILL.md",
+      "size": 2135,
+      "sha256": "f12163f23c6c911c0a432668988711d44b6a3bffb6dd019834bb184acc89dade"
+    },
+    {
+      "id": "technical-and-cro-audit",
+      "kind": "skill",
+      "title": "Technical SEO, Schema & Landing Page CRO Audit",
+      "summary": "Fix indexing, metadata, internal links, and above-the-fold conversion friction.",
+      "tags": [
+        "seo-growth",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/technical-and-cro-audit/SKILL.md",
+      "size": 1224,
+      "sha256": "803787f7b84604442e551d4dd9a847fd4c8c6245741ad2f3799581a1f16c0f76"
+    },
+    {
+      "id": "thumbnail-title-and-packaging",
+      "kind": "skill",
+      "title": "High-CTR Thumbnail, Title & Publishing Package",
+      "summary": "Create title + thumbnail pairs, chapters, captions, and a pre-publish retention check.",
+      "tags": [
+        "content-creation",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/thumbnail-title-and-packaging/SKILL.md",
+      "size": 1380,
+      "sha256": "4442096790e21424923fea0d8cb58c1ada578636dbcce0d916ee2d506d5d958c"
+    },
+    {
+      "id": "ui-craft-delivery",
+      "kind": "skill",
+      "title": "Clean UI Craft & Modular Frontend",
+      "summary": "Build crafted, accessible interfaces with full state coverage and modular files under 300 lines.",
+      "tags": [
+        "engineering",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/ui-craft-delivery/SKILL.md",
+      "size": 2230,
+      "sha256": "8323a993ab01a22d75a23ece0253045d3b2151c2e3db1fa4ba11177188144d77"
+    },
+    {
+      "id": "webhook-and-workflow-build",
+      "kind": "skill",
+      "title": "Idempotent n8n / Make / Webhook Design",
+      "summary": "Build resilient automation flows with deduplication, retries, and clean error alerts.",
+      "tags": [
+        "automation-ai",
+        "workflow"
+      ],
+      "author": "AORG",
+      "version": "1",
+      "path": "skills/webhook-and-workflow-build/SKILL.md",
+      "size": 1224,
+      "sha256": "71e0bd04e5411f5edead6d427a33a8ee8bd567f7e5593855a01bf16579cf01ab"
+    }
+  ]
+}
