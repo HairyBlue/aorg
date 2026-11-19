@@ -244,6 +244,20 @@ rooms:
     defaultResponder:
       kind: agent
       agent: daily-progress-reporter
+  - key: olj-scout-auto-apply
+    name: OnlineJobs.ph Scout and Auto Apply
+    members:
+      - job-scout
+      - job-scout-2
+      - job-scout-3
+      - job-scout-4
+      - job-scout-5
+      - concierge
+      - second-brain
+    bulletin: "Group room for OnlineJobs.ph scouting and guided applications. Coordinate across Job Scout 1-5, Concierge, and Second Brain; verify Apply Points before any submission and never submit applications without explicit user approval."
+    defaultResponder:
+      kind: agent
+      agent: job-scout
 routines:
   - key: morning-concierge-brief
     name: Morning priority & schedule briefing
@@ -304,6 +318,37 @@ routines:
       weekdays:
         - 5
     durationMinutes: 25
+    enabledAfterInstall: false
+  - key: daily-olj-scout
+    name: Daily OnlineJobs.ph Scout
+    agent: job-scout
+    prompt: "Search and evaluate OnlineJobs.ph postings against the user's verified profile, target roles, minimum USD/PHP rate, hours, and no-calls preferences. Extract hidden attention-check keywords and red flags, log qualified leads to the shared tracker, and post alerts to the configured channel. Never submit applications automatically."
+    runOn: maus
+    schedule:
+      type: interval
+      everyMinutes: 150
+      anchorAt: 1795071660000
+    durationMinutes: 25
+    overlap: skip
+    enabledAfterInstall: false
+  - key: daily-olj-scout-auto-apply
+    name: Daily OnlineJobs.ph Scout and Auto Apply
+    agent: job-scout
+    prompt: "Scout OnlineJobs.ph postings against the user's verified profile and target criteria, verify Apply Points balance before any application step, prepare tailored anti-AI-slop drafts with exact URLs and any required attention-check keywords, and log results to the shared tracker. Never bypass logins/CAPTCHAs or submit applications without explicit user approval."
+    runOn: maus
+    schedule:
+      type: daily
+      time: "02:00"
+      weekdays:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+    durationMinutes: 30
+    overlap: skip
     enabledAfterInstall: false
 playbooks:
   - key: personal-day-planning
