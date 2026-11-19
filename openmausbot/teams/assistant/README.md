@@ -1,6 +1,6 @@
 # OpenMausBot Personal Assistant & Career Pack (`assistant`)
 
-An importable 7-agent Personal Assistant, Daily Progress/Kanban Reporting, MPOR/SPOR Reporting, and OnlineJobs.ph Career Scout team for **OpenMausBot**, led by **Concierge (`concierge`)**.
+An importable 11-agent Personal Assistant, Daily Progress/Kanban Reporting, MPOR/SPOR Reporting, and OnlineJobs.ph Career Scout team for **OpenMausBot**, led by **Concierge (`concierge`)**.
 
 ## Contents
 
