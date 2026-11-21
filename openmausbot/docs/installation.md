@@ -21,7 +21,7 @@ When you first install OpenMausBot, it creates a single default **Chief of Staff
 
 Each team folder under [`teams/`](../teams/) includes a single-file BotMRR v1 `.md` playbook:
 - **Software Engineering Crew (9 agents):** [`teams/engineering/team.md`](../teams/engineering/team.md)
-- **Personal Assistant, MPOR & OnlineJobs.ph Crew (11 agents):** [`teams/assistant/team.md`](../teams/assistant/team.md)
+- **Personal Assistant, MPOR & Job Scout Crew (11 agents):** [`teams/assistant/team.md`](../teams/assistant/team.md)
 - **Content Creation, Video & Production Crew (5 agents):** [`teams/content-creation/team.md`](../teams/content-creation/team.md)
 - **Amazon FBA & Seller Central Crew (5 agents):** [`teams/amazon-ops/team.md`](../teams/amazon-ops/team.md)
 - **Social Media & Content Engine Crew (4 agents):** [`teams/socials/team.md`](../teams/socials/team.md)

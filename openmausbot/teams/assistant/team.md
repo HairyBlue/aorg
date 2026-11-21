@@ -2,7 +2,7 @@
 botmrr: 1
 id: assistant
 release: 1.1.0
-name: Personal Assistant, MPOR & OnlineJobs.ph Crew
+name: Personal Assistant, MPOR & Job Scout Crew
 tagline: Run daily priorities, general progress, MPOR/SPOR forms, inbox, notes, and job hunting with a 7-agent personal desk.
 summary: "An 11-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting."
 category: Productivity
@@ -612,7 +612,7 @@ examples:
     output: Job Scout evaluates each listing's salary, hours, and stack, flags lowball or unpaid-trial listings, extracts the hidden subject-line keyword required by the top employer, and drafts a concise, human-sounding subject line and proposal ready for the user to review and send.
 ---
 
-# Personal Assistant, MPOR & OnlineJobs.ph Crew
+# Personal Assistant, MPOR & Job Scout Crew
 
 Run daily priorities, progress reports, MPOR/SPOR forms, inbox, notes, and job hunting with a 7-agent personal desk.
 
