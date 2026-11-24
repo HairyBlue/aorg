@@ -1,0 +1,900 @@
+{
+  "version": 1,
+  "platform": "t3code",
+  "pathRoots": {
+    "aorg": ".",
+    "aconSkills": "~/.gemini/config/skills"
+  },
+  "orchestrator": "t3code/ORCHESTRATOR.md",
+  "defaults": {
+    "interactionMode": "inherit",
+    "runtimeMode": "inherit"
+  },
+  "teams": {
+    "amazon-ops": {
+      "key": "amazon-ops",
+      "name": "Amazon FBA & Seller Central Operations Crew",
+      "summary": "A 5-agent Amazon Seller Central and FBA operations crew led by Seller Lead. Covers ASIN & competitor margin research, high-converting listing copy & backend search terms, Sponsored Products ACOS/TACOS & negative-keyword audits, FBA restock & stranded-inventory monitoring, and TOS-compliant customer review & Q&A analysis.",
+      "head": "seller-lead",
+      "bots": [
+        "seller-lead",
+        "product-scout",
+        "listing-seo",
+        "ppc-analyst",
+        "inventory-ops"
+      ],
+      "presets": {
+        "starter": [
+          "seller-lead",
+          "product-scout",
+          "listing-seo",
+          "ppc-analyst",
+          "inventory-ops"
+        ]
+      },
+      "readmePath": "t3code/teams/amazon-ops/README.md"
+    },
+    "assistant": {
+      "key": "assistant",
+      "name": "Personal Assistant, MPOR & Job Scout Crew",
+      "summary": "An 11-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting.",
+      "head": "concierge",
+      "bots": [
+        "concierge",
+        "job-scout",
+        "job-scout-2",
+        "job-scout-3",
+        "job-scout-4",
+        "job-scout-5",
+        "mpor-reporter",
+        "daily-progress-reporter",
+        "inbox-triage",
+        "second-brain",
+        "admin-ops"
+      ],
+      "presets": {
+        "starter": [
+          "concierge",
+          "daily-progress-reporter",
+          "inbox-triage",
+          "second-brain"
+        ],
+        "full": [
+          "concierge",
+          "daily-progress-reporter",
+          "mpor-reporter",
+          "inbox-triage",
+          "second-brain",
+          "admin-ops",
+          "job-scout"
+        ]
+      },
+      "readmePath": "t3code/teams/assistant/README.md"
+    },
+    "automation-ai": {
+      "key": "automation-ai",
+      "name": "Workflow Automation & AI Systems Crew",
+      "summary": "A 4-agent workflow automation and AI integration crew led by Automation Architect. Maps repetitive business processes into trigger-action specs, designs idempotent n8n/Make/Zapier/Apps Script/Python pipelines, and hardens LLM prompts, JSON schemas, and error-handling fallbacks.",
+      "head": "automation-architect",
+      "bots": [
+        "automation-architect",
+        "process-mapper",
+        "workflow-builder",
+        "prompt-qa"
+      ],
+      "presets": {
+        "starter": [
+          "automation-architect",
+          "process-mapper",
+          "workflow-builder",
+          "prompt-qa"
+        ]
+      },
+      "readmePath": "t3code/teams/automation-ai/README.md"
+    },
+    "business": {
+      "key": "business",
+      "name": "Business, Client & Agency Operations Crew",
+      "summary": "A 4-agent business and client operations crew led by Ops Director. Turns messy process notes or Loom transcripts into step-by-step SOPs, manages client onboarding and weekly status briefs, tracks invoices/retainers/subscriptions, and monitors competitor moves.",
+      "head": "ops-director",
+      "bots": [
+        "ops-director",
+        "sop-architect",
+        "client-success",
+        "market-intel"
+      ],
+      "presets": {
+        "starter": [
+          "ops-director",
+          "sop-architect",
+          "client-success",
+          "market-intel"
+        ]
+      },
+      "readmePath": "t3code/teams/business/README.md"
+    },
+    "content-creation": {
+      "key": "content-creation",
+      "name": "Content Creation, Video & Production Crew",
+      "summary": "A 5-agent content creation and video production studio led by Showrunner. Supports all content formats\u2014talking-head videos, screen-recorded tutorials, YouTube long-form, TikTok/Reels/Shorts, faceless documentaries, written carousels, and optional AI short-clips\u2014covering hooks, scripts, A-roll/B-roll storyboards (plus optional AI image/video prompts), CapCut/Premiere edit sheets, and thumbnail/title packaging.",
+      "head": "showrunner",
+      "bots": [
+        "showrunner",
+        "script-writer",
+        "visual-director",
+        "edit-producer",
+        "growth-packager"
+      ],
+      "presets": {
+        "starter": [
+          "showrunner",
+          "script-writer",
+          "visual-director",
+          "edit-producer",
+          "growth-packager"
+        ]
+      },
+      "readmePath": "t3code/teams/content-creation/README.md"
+    },
+    "engineering": {
+      "key": "engineering",
+      "name": "Software Engineering Crew",
+      "summary": "A 9-agent software engineering crew led by Tech Lead. Coordinates read-only codebase scouting, architecture review, parallel backend and frontend implementation across non-overlapping files, deterministic build/typecheck/lint verification without unrequested test bloat, and independent code and security review.",
+      "head": "tech-lead",
+      "bots": [
+        "tech-lead",
+        "scout",
+        "researcher",
+        "architect",
+        "backend",
+        "frontend",
+        "fullstack",
+        "qa-reviewer",
+        "devops-guard"
+      ],
+      "presets": {
+        "starter": [
+          "tech-lead",
+          "scout",
+          "frontend",
+          "backend",
+          "qa-reviewer"
+        ],
+        "full": [
+          "tech-lead",
+          "scout",
+          "researcher",
+          "architect",
+          "backend",
+          "frontend",
+          "fullstack",
+          "qa-reviewer",
+          "devops-guard"
+        ]
+      },
+      "readmePath": "t3code/teams/engineering/README.md"
+    },
+    "sales-outreach": {
+      "key": "sales-outreach",
+      "name": "Sales, Lead Qualification & Outreach Crew",
+      "summary": "A 3-agent B2B lead generation and outreach crew led by Revenue Lead. Qualifies public leads and companies against your Ideal Customer Profile (ICP), drafts specific non-spammy outreach messages, and prepares grounded follow-ups for stalled conversations without sending automatically.",
+      "head": "revenue-lead",
+      "bots": [
+        "revenue-lead",
+        "lead-miner",
+        "outreach-closer"
+      ],
+      "presets": {
+        "starter": [
+          "revenue-lead",
+          "lead-miner",
+          "outreach-closer"
+        ]
+      },
+      "readmePath": "t3code/teams/sales-outreach/README.md"
+    },
+    "seo-growth": {
+      "key": "seo-growth",
+      "name": "SEO, Content & Conversion Growth Crew",
+      "summary": "A 4-agent SEO and organic growth crew led by Growth Lead. Covers search-intent keyword clustering, technical & on-page SEO triage, deeply researched non-generic content briefs/articles, and landing page conversion rate optimization (CRO).",
+      "head": "growth-lead",
+      "bots": [
+        "growth-lead",
+        "keyword-mapper",
+        "tech-seo",
+        "content-writer"
+      ],
+      "presets": {
+        "starter": [
+          "growth-lead",
+          "keyword-mapper",
+          "tech-seo",
+          "content-writer"
+        ]
+      },
+      "readmePath": "t3code/teams/seo-growth/README.md"
+    },
+    "socials": {
+      "key": "socials",
+      "name": "Social Media & Content Engine Crew",
+      "summary": "A 4-agent social media and content repurposing crew led by Editor in Chief. Covers trend & hook research, multi-platform content repurposing (X threads, LinkedIn posts, FB/IG captions, Short/Reel scripts), anti-AI-slop copywriting, and community comment/DM reply drafting without auto-posting.",
+      "head": "editor-in-chief",
+      "bots": [
+        "editor-in-chief",
+        "trend-radar",
+        "repurposer",
+        "community-desk"
+      ],
+      "presets": {
+        "starter": [
+          "editor-in-chief",
+          "trend-radar",
+          "repurposer",
+          "community-desk"
+        ]
+      },
+      "readmePath": "t3code/teams/socials/README.md"
+    }
+  },
+  "bots": {
+    "seller-lead": {
+      "key": "seller-lead",
+      "name": "Seller Lead",
+      "title": "E-Commerce & Marketplace Lead",
+      "team": "amazon-ops",
+      "isHead": true,
+      "threadTitle": "Seller Lead \u2014 E-Commerce & Marketplace Lead",
+      "promptPath": "t3code/teams/amazon-ops/bots/seller-lead.md",
+      "skillPaths": [
+        "openmausbot/teams/amazon-ops/skills/asin-and-competitor-research/SKILL.md",
+        "openmausbot/teams/amazon-ops/skills/ppc-wasted-spend-audit/SKILL.md",
+        "~/.gemini/config/skills/amazon-ops/SKILL.md"
+      ]
+    },
+    "product-scout": {
+      "key": "product-scout",
+      "name": "Product Scout",
+      "title": "ASIN, Competitor & Margin Analyst",
+      "team": "amazon-ops",
+      "isHead": false,
+      "threadTitle": "Product Scout \u2014 ASIN, Competitor & Margin Analyst",
+      "promptPath": "t3code/teams/amazon-ops/bots/product-scout.md",
+      "skillPaths": [
+        "openmausbot/teams/amazon-ops/skills/asin-and-competitor-research/SKILL.md",
+        "~/.gemini/config/skills/amazon-ops/SKILL.md"
+      ]
+    },
+    "listing-seo": {
+      "key": "listing-seo",
+      "name": "Listing SEO",
+      "title": "Amazon Copywriter & Keyword Specialist",
+      "team": "amazon-ops",
+      "isHead": false,
+      "threadTitle": "Listing SEO \u2014 Amazon Copywriter & Keyword Specialist",
+      "promptPath": "t3code/teams/amazon-ops/bots/listing-seo.md",
+      "skillPaths": [
+        "openmausbot/teams/amazon-ops/skills/listing-seo-and-keywords/SKILL.md",
+        "~/.gemini/config/skills/amazon-ops/SKILL.md"
+      ]
+    },
+    "ppc-analyst": {
+      "key": "ppc-analyst",
+      "name": "PPC Analyst",
+      "title": "Amazon Advertising & ACOS/TACOS Optimizer",
+      "team": "amazon-ops",
+      "isHead": false,
+      "threadTitle": "PPC Analyst \u2014 Amazon Advertising & ACOS/TACOS Optimizer",
+      "promptPath": "t3code/teams/amazon-ops/bots/ppc-analyst.md",
+      "skillPaths": [
+        "openmausbot/teams/amazon-ops/skills/ppc-wasted-spend-audit/SKILL.md",
+        "~/.gemini/config/skills/amazon-ops/SKILL.md"
+      ]
+    },
+    "inventory-ops": {
+      "key": "inventory-ops",
+      "name": "Inventory Ops",
+      "title": "FBA Inventory, Restock & Review Specialist",
+      "team": "amazon-ops",
+      "isHead": false,
+      "threadTitle": "Inventory Ops \u2014 FBA Inventory, Restock & Review Specialist",
+      "promptPath": "t3code/teams/amazon-ops/bots/inventory-ops.md",
+      "skillPaths": [
+        "openmausbot/teams/amazon-ops/skills/fba-inventory-and-reviews/SKILL.md",
+        "~/.gemini/config/skills/amazon-ops/SKILL.md"
+      ]
+    },
+    "concierge": {
+      "key": "concierge",
+      "name": "Concierge",
+      "title": "Personal Assistant Lead & Day Planner",
+      "team": "assistant",
+      "isHead": true,
+      "threadTitle": "Concierge \u2014 Personal Assistant Lead & Day Planner",
+      "promptPath": "t3code/teams/assistant/bots/concierge.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/personal-day-planning/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "job-scout": {
+      "key": "job-scout",
+      "name": "Job Scout",
+      "title": "OnlineJobs.ph & Remote Career Strategist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Job Scout \u2014 OnlineJobs.ph & Remote Career Strategist",
+      "promptPath": "t3code/teams/assistant/bots/job-scout.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/job-hunt-onlinejobs/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "job-scout-2": {
+      "key": "job-scout-2",
+      "name": "Job Scout 2",
+      "title": "OnlineJobs.ph & Remote Career Strategist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Job Scout 2 \u2014 OnlineJobs.ph & Remote Career Strategist",
+      "promptPath": "t3code/teams/assistant/bots/job-scout-2.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/job-hunt-onlinejobs/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "job-scout-3": {
+      "key": "job-scout-3",
+      "name": "Job Scout 3",
+      "title": "OnlineJobs.ph & Remote Career Strategist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Job Scout 3 \u2014 OnlineJobs.ph & Remote Career Strategist",
+      "promptPath": "t3code/teams/assistant/bots/job-scout-3.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/job-hunt-onlinejobs/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "job-scout-4": {
+      "key": "job-scout-4",
+      "name": "Job Scout 4",
+      "title": "OnlineJobs.ph & Remote Career Strategist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Job Scout 4 \u2014 OnlineJobs.ph & Remote Career Strategist",
+      "promptPath": "t3code/teams/assistant/bots/job-scout-4.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/job-hunt-onlinejobs/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "job-scout-5": {
+      "key": "job-scout-5",
+      "name": "Job Scout 5",
+      "title": "OnlineJobs.ph & Remote Career Strategist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Job Scout 5 \u2014 OnlineJobs.ph & Remote Career Strategist",
+      "promptPath": "t3code/teams/assistant/bots/job-scout-5.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/job-hunt-onlinejobs/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "mpor-reporter": {
+      "key": "mpor-reporter",
+      "name": "MPOR Reporter",
+      "title": "MPOR/SPOR Report Specialist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "MPOR Reporter \u2014 MPOR/SPOR Report Specialist",
+      "promptPath": "t3code/teams/assistant/bots/mpor-reporter.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/mpor-progress-report/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "daily-progress-reporter": {
+      "key": "daily-progress-reporter",
+      "name": "Daily Progress Reporter",
+      "title": "Daily / Weekly Progress & Kanban Specialist",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Daily Progress Reporter \u2014 Daily / Weekly Progress & Kanban Specialist",
+      "promptPath": "t3code/teams/assistant/bots/daily-progress-reporter.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/daily-progress-report/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "inbox-triage": {
+      "key": "inbox-triage",
+      "name": "Inbox Triage",
+      "title": "Email, Message & Follow-Up Assistant",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Inbox Triage \u2014 Email, Message & Follow-Up Assistant",
+      "promptPath": "t3code/teams/assistant/bots/inbox-triage.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/inbox-and-notes-triage/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "second-brain": {
+      "key": "second-brain",
+      "name": "Second Brain",
+      "title": "Knowledge, Meeting Notes & Docs Curator",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Second Brain \u2014 Knowledge, Meeting Notes & Docs Curator",
+      "promptPath": "t3code/teams/assistant/bots/second-brain.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/inbox-and-notes-triage/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "admin-ops": {
+      "key": "admin-ops",
+      "name": "Admin Ops",
+      "title": "Device Maintenance, Exam Assistance & Ops Logger",
+      "team": "assistant",
+      "isHead": false,
+      "threadTitle": "Admin Ops \u2014 Device Maintenance, Exam Assistance & Ops Logger",
+      "promptPath": "t3code/teams/assistant/bots/admin-ops.md",
+      "skillPaths": [
+        "openmausbot/teams/assistant/skills/personal-day-planning/SKILL.md",
+        "openmausbot/teams/assistant/skills/daily-progress-report/SKILL.md",
+        "openmausbot/teams/assistant/skills/mpor-progress-report/SKILL.md",
+        "~/.gemini/config/skills/productivity/SKILL.md"
+      ]
+    },
+    "automation-architect": {
+      "key": "automation-architect",
+      "name": "Automation Architect",
+      "title": "Workflow & AI Systems Lead",
+      "team": "automation-ai",
+      "isHead": true,
+      "threadTitle": "Automation Architect \u2014 Workflow & AI Systems Lead",
+      "promptPath": "t3code/teams/automation-ai/bots/automation-architect.md",
+      "skillPaths": [
+        "openmausbot/teams/automation-ai/skills/process-to-automation-spec/SKILL.md",
+        "openmausbot/teams/automation-ai/skills/webhook-and-workflow-build/SKILL.md"
+      ]
+    },
+    "process-mapper": {
+      "key": "process-mapper",
+      "name": "Process Mapper",
+      "title": "Bottleneck & Trigger-Action Analyst",
+      "team": "automation-ai",
+      "isHead": false,
+      "threadTitle": "Process Mapper \u2014 Bottleneck & Trigger-Action Analyst",
+      "promptPath": "t3code/teams/automation-ai/bots/process-mapper.md",
+      "skillPaths": [
+        "openmausbot/teams/automation-ai/skills/process-to-automation-spec/SKILL.md"
+      ]
+    },
+    "workflow-builder": {
+      "key": "workflow-builder",
+      "name": "Workflow Builder",
+      "title": "n8n, Make, Zapier & Webhook Engineer",
+      "team": "automation-ai",
+      "isHead": false,
+      "threadTitle": "Workflow Builder \u2014 n8n, Make, Zapier & Webhook Engineer",
+      "promptPath": "t3code/teams/automation-ai/bots/workflow-builder.md",
+      "skillPaths": [
+        "openmausbot/teams/automation-ai/skills/webhook-and-workflow-build/SKILL.md"
+      ]
+    },
+    "prompt-qa": {
+      "key": "prompt-qa",
+      "name": "Prompt QA",
+      "title": "Structured AI Output & Edge-Case Tester",
+      "team": "automation-ai",
+      "isHead": false,
+      "threadTitle": "Prompt QA \u2014 Structured AI Output & Edge-Case Tester",
+      "promptPath": "t3code/teams/automation-ai/bots/prompt-qa.md",
+      "skillPaths": [
+        "openmausbot/teams/automation-ai/skills/structured-ai-node-qa/SKILL.md"
+      ]
+    },
+    "ops-director": {
+      "key": "ops-director",
+      "name": "Ops Director",
+      "title": "Business & Client Operations Lead",
+      "team": "business",
+      "isHead": true,
+      "threadTitle": "Ops Director \u2014 Business & Client Operations Lead",
+      "promptPath": "t3code/teams/business/bots/ops-director.md",
+      "skillPaths": [
+        "openmausbot/teams/business/skills/sop-and-process-builder/SKILL.md",
+        "openmausbot/teams/business/skills/client-delivery-and-scope/SKILL.md",
+        "~/.gemini/config/skills/business/SKILL.md"
+      ]
+    },
+    "sop-architect": {
+      "key": "sop-architect",
+      "name": "SOP Architect",
+      "title": "Process & Documentation Specialist",
+      "team": "business",
+      "isHead": false,
+      "threadTitle": "SOP Architect \u2014 Process & Documentation Specialist",
+      "promptPath": "t3code/teams/business/bots/sop-architect.md",
+      "skillPaths": [
+        "openmausbot/teams/business/skills/sop-and-process-builder/SKILL.md",
+        "~/.gemini/config/skills/business/SKILL.md"
+      ]
+    },
+    "client-success": {
+      "key": "client-success",
+      "name": "Client Success",
+      "title": "Account, Retainer & Scope Manager",
+      "team": "business",
+      "isHead": false,
+      "threadTitle": "Client Success \u2014 Account, Retainer & Scope Manager",
+      "promptPath": "t3code/teams/business/bots/client-success.md",
+      "skillPaths": [
+        "openmausbot/teams/business/skills/client-delivery-and-scope/SKILL.md",
+        "~/.gemini/config/skills/business/SKILL.md"
+      ]
+    },
+    "market-intel": {
+      "key": "market-intel",
+      "name": "Market Intel",
+      "title": "Competitor, Pricing & Spend Analyst",
+      "team": "business",
+      "isHead": false,
+      "threadTitle": "Market Intel \u2014 Competitor, Pricing & Spend Analyst",
+      "promptPath": "t3code/teams/business/bots/market-intel.md",
+      "skillPaths": [
+        "openmausbot/teams/business/skills/competitor-and-spend-audit/SKILL.md",
+        "~/.gemini/config/skills/business/SKILL.md"
+      ]
+    },
+    "showrunner": {
+      "key": "showrunner",
+      "name": "Showrunner",
+      "title": "Creative Director & Production Lead",
+      "team": "content-creation",
+      "isHead": true,
+      "threadTitle": "Showrunner \u2014 Creative Director & Production Lead",
+      "promptPath": "t3code/teams/content-creation/bots/showrunner.md",
+      "skillPaths": [
+        "openmausbot/teams/content-creation/skills/hook-and-scriptwriting/SKILL.md",
+        "openmausbot/teams/content-creation/skills/storyboard-and-visual-direction/SKILL.md"
+      ]
+    },
+    "script-writer": {
+      "key": "script-writer",
+      "name": "Script Writer",
+      "title": "Long-Form & Short-Form Scriptwriter",
+      "team": "content-creation",
+      "isHead": false,
+      "threadTitle": "Script Writer \u2014 Long-Form & Short-Form Scriptwriter",
+      "promptPath": "t3code/teams/content-creation/bots/script-writer.md",
+      "skillPaths": [
+        "openmausbot/teams/content-creation/skills/hook-and-scriptwriting/SKILL.md"
+      ]
+    },
+    "visual-director": {
+      "key": "visual-director",
+      "name": "Visual Director",
+      "title": "Storyboard, B-Roll & Visual Prompt Director",
+      "team": "content-creation",
+      "isHead": false,
+      "threadTitle": "Visual Director \u2014 Storyboard, B-Roll & Visual Prompt Director",
+      "promptPath": "t3code/teams/content-creation/bots/visual-director.md",
+      "skillPaths": [
+        "openmausbot/teams/content-creation/skills/storyboard-and-visual-direction/SKILL.md"
+      ]
+    },
+    "edit-producer": {
+      "key": "edit-producer",
+      "name": "Edit Producer",
+      "title": "Pacing, Audio, SFX & Timeline Designer",
+      "team": "content-creation",
+      "isHead": false,
+      "threadTitle": "Edit Producer \u2014 Pacing, Audio, SFX & Timeline Designer",
+      "promptPath": "t3code/teams/content-creation/bots/edit-producer.md",
+      "skillPaths": [
+        "openmausbot/teams/content-creation/skills/audio-and-edit-timeline/SKILL.md"
+      ]
+    },
+    "growth-packager": {
+      "key": "growth-packager",
+      "name": "Growth Packager",
+      "title": "Thumbnail, Title & Publishing Strategist",
+      "team": "content-creation",
+      "isHead": false,
+      "threadTitle": "Growth Packager \u2014 Thumbnail, Title & Publishing Strategist",
+      "promptPath": "t3code/teams/content-creation/bots/growth-packager.md",
+      "skillPaths": [
+        "openmausbot/teams/content-creation/skills/thumbnail-title-and-packaging/SKILL.md"
+      ]
+    },
+    "tech-lead": {
+      "key": "tech-lead",
+      "name": "Tech Lead",
+      "title": "Engineering Team Lead",
+      "team": "engineering",
+      "isHead": true,
+      "threadTitle": "Tech Lead \u2014 Engineering Team Lead",
+      "promptPath": "t3code/teams/engineering/bots/tech-lead.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/team-orchestration/SKILL.md",
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "scout": {
+      "key": "scout",
+      "name": "Scout",
+      "title": "Codebase Explorer & Seam Mapper",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Scout \u2014 Codebase Explorer & Seam Mapper",
+      "promptPath": "t3code/teams/engineering/bots/scout.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/team-orchestration/SKILL.md",
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "researcher": {
+      "key": "researcher",
+      "name": "Researcher",
+      "title": "Technical Documentation & Version Analyst",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Researcher \u2014 Technical Documentation & Version Analyst",
+      "promptPath": "t3code/teams/engineering/bots/researcher.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/team-orchestration/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "architect": {
+      "key": "architect",
+      "name": "Architect",
+      "title": "System Architecture & Trade-off Advisor",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Architect \u2014 System Architecture & Trade-off Advisor",
+      "promptPath": "t3code/teams/engineering/bots/architect.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/team-orchestration/SKILL.md",
+        "openmausbot/teams/engineering/skills/pragmatic-engineering/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "backend": {
+      "key": "backend",
+      "name": "Backend",
+      "title": "Backend, API & Data Engineer",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Backend \u2014 Backend, API & Data Engineer",
+      "promptPath": "t3code/teams/engineering/bots/backend.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "openmausbot/teams/engineering/skills/pragmatic-engineering/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "frontend": {
+      "key": "frontend",
+      "name": "Frontend",
+      "title": "Frontend & UI Craft Engineer",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Frontend \u2014 Frontend & UI Craft Engineer",
+      "promptPath": "t3code/teams/engineering/bots/frontend.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "openmausbot/teams/engineering/skills/pragmatic-engineering/SKILL.md",
+        "openmausbot/teams/engineering/skills/ui-craft-delivery/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "fullstack": {
+      "key": "fullstack",
+      "name": "Full-Stack",
+      "title": "Parallel Implementation & Synthesis Engineer",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "Full-Stack \u2014 Parallel Implementation & Synthesis Engineer",
+      "promptPath": "t3code/teams/engineering/bots/fullstack.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "openmausbot/teams/engineering/skills/pragmatic-engineering/SKILL.md",
+        "openmausbot/teams/engineering/skills/ui-craft-delivery/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "qa-reviewer": {
+      "key": "qa-reviewer",
+      "name": "QA Reviewer",
+      "title": "Independent Code Quality & Security Auditor",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "QA Reviewer \u2014 Independent Code Quality & Security Auditor",
+      "promptPath": "t3code/teams/engineering/bots/qa-reviewer.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/code-and-security-review/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "devops-guard": {
+      "key": "devops-guard",
+      "name": "DevOps Guard",
+      "title": "Git Safety, Worktree & Release Guardian",
+      "team": "engineering",
+      "isHead": false,
+      "threadTitle": "DevOps Guard \u2014 Git Safety, Worktree & Release Guardian",
+      "promptPath": "t3code/teams/engineering/bots/devops-guard.md",
+      "skillPaths": [
+        "openmausbot/teams/engineering/skills/parallel-crew-dispatch/SKILL.md",
+        "openmausbot/teams/engineering/skills/code-and-security-review/SKILL.md",
+        "~/.gemini/config/skills/engineering/SKILL.md",
+        "~/.gemini/config/skills/security-devops/SKILL.md",
+        "~/.gemini/config/skills/design/SKILL.md"
+      ]
+    },
+    "revenue-lead": {
+      "key": "revenue-lead",
+      "name": "Revenue Lead",
+      "title": "Outbound Sales & Pipeline Lead",
+      "team": "sales-outreach",
+      "isHead": true,
+      "threadTitle": "Revenue Lead \u2014 Outbound Sales & Pipeline Lead",
+      "promptPath": "t3code/teams/sales-outreach/bots/revenue-lead.md",
+      "skillPaths": [
+        "openmausbot/teams/sales-outreach/skills/icp-lead-qualification/SKILL.md",
+        "openmausbot/teams/sales-outreach/skills/context-first-outreach/SKILL.md"
+      ]
+    },
+    "lead-miner": {
+      "key": "lead-miner",
+      "name": "Lead Miner",
+      "title": "Prospect & Buying-Signal Researcher",
+      "team": "sales-outreach",
+      "isHead": false,
+      "threadTitle": "Lead Miner \u2014 Prospect & Buying-Signal Researcher",
+      "promptPath": "t3code/teams/sales-outreach/bots/lead-miner.md",
+      "skillPaths": [
+        "openmausbot/teams/sales-outreach/skills/icp-lead-qualification/SKILL.md"
+      ]
+    },
+    "outreach-closer": {
+      "key": "outreach-closer",
+      "name": "Outreach Closer",
+      "title": "Cold Outreach & Follow-Up Copywriter",
+      "team": "sales-outreach",
+      "isHead": false,
+      "threadTitle": "Outreach Closer \u2014 Cold Outreach & Follow-Up Copywriter",
+      "promptPath": "t3code/teams/sales-outreach/bots/outreach-closer.md",
+      "skillPaths": [
+        "openmausbot/teams/sales-outreach/skills/context-first-outreach/SKILL.md",
+        "openmausbot/teams/sales-outreach/skills/stalled-thread-recovery/SKILL.md"
+      ]
+    },
+    "growth-lead": {
+      "key": "growth-lead",
+      "name": "Growth Lead",
+      "title": "SEO & Organic Acquisition Lead",
+      "team": "seo-growth",
+      "isHead": true,
+      "threadTitle": "Growth Lead \u2014 SEO & Organic Acquisition Lead",
+      "promptPath": "t3code/teams/seo-growth/bots/growth-lead.md",
+      "skillPaths": [
+        "openmausbot/teams/seo-growth/skills/keyword-opportunity-map/SKILL.md",
+        "openmausbot/teams/seo-growth/skills/technical-and-cro-audit/SKILL.md",
+        "~/.gemini/config/skills/seo-growth/SKILL.md"
+      ]
+    },
+    "keyword-mapper": {
+      "key": "keyword-mapper",
+      "name": "Keyword Mapper",
+      "title": "Search Intent & Content Gap Analyst",
+      "team": "seo-growth",
+      "isHead": false,
+      "threadTitle": "Keyword Mapper \u2014 Search Intent & Content Gap Analyst",
+      "promptPath": "t3code/teams/seo-growth/bots/keyword-mapper.md",
+      "skillPaths": [
+        "openmausbot/teams/seo-growth/skills/keyword-opportunity-map/SKILL.md",
+        "~/.gemini/config/skills/seo-growth/SKILL.md"
+      ]
+    },
+    "tech-seo": {
+      "key": "tech-seo",
+      "name": "Tech SEO",
+      "title": "Technical SEO, Schema & Internal Linking Specialist",
+      "team": "seo-growth",
+      "isHead": false,
+      "threadTitle": "Tech SEO \u2014 Technical SEO, Schema & Internal Linking Specialist",
+      "promptPath": "t3code/teams/seo-growth/bots/tech-seo.md",
+      "skillPaths": [
+        "openmausbot/teams/seo-growth/skills/technical-and-cro-audit/SKILL.md",
+        "~/.gemini/config/skills/seo-growth/SKILL.md"
+      ]
+    },
+    "content-writer": {
+      "key": "content-writer",
+      "name": "Content Writer",
+      "title": "SEO Content & Landing Page Copywriter",
+      "team": "seo-growth",
+      "isHead": false,
+      "threadTitle": "Content Writer \u2014 SEO Content & Landing Page Copywriter",
+      "promptPath": "t3code/teams/seo-growth/bots/content-writer.md",
+      "skillPaths": [
+        "openmausbot/teams/seo-growth/skills/seo-content-and-briefs/SKILL.md",
+        "~/.gemini/config/skills/seo-growth/SKILL.md"
+      ]
+    },
+    "editor-in-chief": {
+      "key": "editor-in-chief",
+      "name": "Editor in Chief",
+      "title": "Content & Brand Distribution Lead",
+      "team": "socials",
+      "isHead": true,
+      "threadTitle": "Editor in Chief \u2014 Content & Brand Distribution Lead",
+      "promptPath": "t3code/teams/socials/bots/editor-in-chief.md",
+      "skillPaths": [
+        "openmausbot/teams/socials/skills/content-repurposing/SKILL.md",
+        "openmausbot/teams/socials/skills/hook-and-copy-craft/SKILL.md"
+      ]
+    },
+    "trend-radar": {
+      "key": "trend-radar",
+      "name": "Trend Radar",
+      "title": "Niche Topic & Hook Researcher",
+      "team": "socials",
+      "isHead": false,
+      "threadTitle": "Trend Radar \u2014 Niche Topic & Hook Researcher",
+      "promptPath": "t3code/teams/socials/bots/trend-radar.md",
+      "skillPaths": [
+        "openmausbot/teams/socials/skills/hook-and-copy-craft/SKILL.md"
+      ]
+    },
+    "repurposer": {
+      "key": "repurposer",
+      "name": "Repurposer",
+      "title": "Multi-Platform Content Adapter",
+      "team": "socials",
+      "isHead": false,
+      "threadTitle": "Repurposer \u2014 Multi-Platform Content Adapter",
+      "promptPath": "t3code/teams/socials/bots/repurposer.md",
+      "skillPaths": [
+        "openmausbot/teams/socials/skills/content-repurposing/SKILL.md",
+        "openmausbot/teams/socials/skills/hook-and-copy-craft/SKILL.md"
+      ]
+    },
+    "community-desk": {
+      "key": "community-desk",
+      "name": "Community Desk",
+      "title": "Engagement & DM Reply Drafter",
+      "team": "socials",
+      "isHead": false,
+      "threadTitle": "Community Desk \u2014 Engagement & DM Reply Drafter",
+      "promptPath": "t3code/teams/socials/bots/community-desk.md",
+      "skillPaths": [
+        "openmausbot/teams/socials/skills/community-engagement/SKILL.md"
+      ]
+    }
+  }
+}
