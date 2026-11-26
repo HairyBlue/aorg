@@ -28,10 +28,15 @@ requirements:
       label: GitHub
       reason: Inspect repositories, pull requests, issues, and checks when authorized.
       optional: true
+    - slug: discord
+      label: Discord
+      reason: Post release or operational alerts to a configured channel when authorized.
+      optional: true
   capabilities:
     - agents
     - local-files
     - connected-apps
+    - schedules
   platforms:
     - any
 agents:
@@ -179,7 +184,19 @@ rooms:
     defaultResponder:
       kind: agent
       agent: tech-lead
-routines: []
+routines:
+  - key: openmausbot-release-check
+    name: Check official OpenMausBot GitHub releases
+    agent: devops-guard
+    prompt: "Check the official OpenMausBot GitHub repository (`https://github.com/milind-soni/OpenMausBot`) for a new release (`releases/latest`). Compare the latest published release tag against the previously saved baseline release tag in the agent workspace. If a newer non-draft release exists, post a concise release alert (version tag, published date, key highlights, and release URL) to the user's configured Discord channel, and update the saved baseline tag only after delivery succeeds. If there is no new release, do not ping Discord and briefly record the checked tag and timestamp."
+    runOn: maus
+    schedule:
+      type: interval
+      everyMinutes: 300
+      anchorAt: 1795678469000
+    durationMinutes: 15
+    overlap: skip
+    enabledAfterInstall: false
 playbooks:
   - key: team-orchestration
     name: Engineering Orchestration & Synthesis
@@ -251,6 +268,8 @@ Never request pasted passwords or secret keys. Use the platform's normal connect
 2. **Zero Unapproved Dependencies:** Never install new packages (`package.json`, `pyproject.toml`, `Cargo.toml`, `composer.json`) without explicit user approval.
 3. **Pragmatic Verification (No Unrequested Test Bloat):** Verify changes using deterministic **compiler, typecheck, and linter** checks (plus any existing test suite). Do not author new unit, UI, or database test suites unless the user explicitly requests tests or an existing test breaks due to an intentional behavior change.
 
+All routines start paused until explicitly enabled by the user.
+
 ## Mission
 
 A 9-agent software engineering crew led by Tech Lead (`tech-lead`). It inspects the existing codebase first, dispatches multiple Backend, Frontend, and Full-Stack engineers in parallel across non-overlapping file scopes, enforces anti-overengineering simplicity, and audits diffs through an independent Code & Security Reviewer.
@@ -264,6 +283,7 @@ A 9-agent software engineering crew led by Tech Lead (`tech-lead`). It inspects 
 ## Connections
 
 - **GitHub (optional):** Inspect repositories, pull requests, issues, and checks when authorized.
+- **Discord (optional):** Post release or operational alerts to a configured channel when authorized.
 
 ## Team
 
@@ -284,6 +304,13 @@ OpenMausBot's built-in **Chief of Staff** remains your single global workspace c
 ## Shared rooms
 
 ### Engineering Room (`engineering-room`)
+
+## Suggested routines
+
+### Check official OpenMausBot GitHub releases
+**Owner:** `devops-guard`  
+**Schedule:** Every 300 minutes (5 hours)  
+**Initial state:** paused — the user must enable it
 
 ## Playbooks
 
