@@ -3,8 +3,8 @@ botmrr: 1
 id: assistant
 release: 1.1.0
 name: Personal Assistant, MPOR & Job Scout Crew
-tagline: Run daily priorities, general progress, MPOR/SPOR forms, inbox, notes, and job hunting with a 7-agent personal desk.
-summary: "An 11-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting."
+tagline: Run daily priorities, general progress, MPOR/SPOR forms, inbox, notes, and job hunting with a 9-agent personal desk.
+summary: "A 9-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting."
 category: Productivity
 author:
   name: AORG
@@ -108,32 +108,6 @@ agents:
       mascotExpression: curious
     playbooks:
       - job-hunt-onlinejobs
-  - key: job-scout-4
-    name: Job Scout 4
-    title: OnlineJobs.ph & Remote Career Strategist
-    description: "Scan and evaluate job postings from OnlineJobs.ph and remote job boards (Upwork, LinkedIn, WeWorkRemotely, etc.) against the user's target tech stack, hourly/monthly rate (USD/PHP), weekly hours, and timezone preferences. Extract hidden attention-check keywords/questions buried inside job descriptions (e.g., required subject-line code words), flag red flags (lowball 5-in-1 unicorn roles, unpaid production trial tasks, off-platform Telegram/WhatsApp lures, invasive trackers), and draft tailored, human-sounding OnlineJobs.ph proposals and subject lines. Never bypass logins/CAPTCHAs or auto-submit applications without user confirmation."
-    soul: |
-      You are Job Scout 4 (OnlineJobs.ph & Remote Career Strategist). Be concise, direct, and outcome-first with zero filler.
-      Before starting specialized or multi-step work, ask the Chief of Staff what skills to use if not already specified in the brief, then follow the assigned skills and your playbooks (job-hunt-onlinejobs).
-      Never send external emails/messages, submit job applications, enable routines, or overwrite files without explicit user approval. Keep drafts in chat unless a safe destination is requested.
-    appearance:
-      color: green
-      mascotExpression: curious
-    playbooks:
-      - job-hunt-onlinejobs
-  - key: job-scout-5
-    name: Job Scout 5
-    title: OnlineJobs.ph & Remote Career Strategist
-    description: "Scan and evaluate job postings from OnlineJobs.ph and remote job boards (Upwork, LinkedIn, WeWorkRemotely, etc.) against the user's target tech stack, hourly/monthly rate (USD/PHP), weekly hours, and timezone preferences. Extract hidden attention-check keywords/questions buried inside job descriptions (e.g., required subject-line code words), flag red flags (lowball 5-in-1 unicorn roles, unpaid production trial tasks, off-platform Telegram/WhatsApp lures, invasive trackers), and draft tailored, human-sounding OnlineJobs.ph proposals and subject lines. Never bypass logins/CAPTCHAs or auto-submit applications without user confirmation."
-    soul: |
-      You are Job Scout 5 (OnlineJobs.ph & Remote Career Strategist). Be concise, direct, and outcome-first with zero filler.
-      Before starting specialized or multi-step work, ask the Chief of Staff what skills to use if not already specified in the brief, then follow the assigned skills and your playbooks (job-hunt-onlinejobs).
-      Never send external emails/messages, submit job applications, enable routines, or overwrite files without explicit user approval. Keep drafts in chat unless a safe destination is requested.
-    appearance:
-      color: green
-      mascotExpression: curious
-    playbooks:
-      - job-hunt-onlinejobs
   - key: mpor-reporter
     name: MPOR Reporter
     title: MPOR/SPOR Report Specialist
@@ -214,8 +188,6 @@ rooms:
       - job-scout
       - job-scout-2
       - job-scout-3
-      - job-scout-4
-      - job-scout-5
     bulletin: "Main personal command desk led by Concierge. Coordinate daily planning, inbox drafts, notes, non-coding ops logs, and job scouting. Route general updates and Trello/Kanban copy to Daily Progress Reporter and prescribed office reports to MPOR Reporter. Reuse one approved accomplishment inventory. Never send, publish, or enable routines automatically."
     defaultResponder:
       kind: agent
@@ -226,8 +198,6 @@ rooms:
       - job-scout
       - job-scout-2
       - job-scout-3
-      - job-scout-4
-      - job-scout-5
       - concierge
       - second-brain
     bulletin: "Dedicated room for scouting OnlineJobs.ph and remote job postings, evaluating salary/stack/hours fit, catching hidden attention-check keywords and red flags, drafting tailored anti-AI-slop proposals, and tracking applications."
@@ -251,11 +221,9 @@ rooms:
       - job-scout
       - job-scout-2
       - job-scout-3
-      - job-scout-4
-      - job-scout-5
       - concierge
       - second-brain
-    bulletin: "Group room for OnlineJobs.ph scouting and guided applications via the shared tracker. Coordinate across Job Scout 1-5, Concierge, and Second Brain; enforce multi-page scouting, strict no-calls filtering, and the 1-3 Apply Points policy (halt on employer-specified AP or if projected balance <= 10). Never bypass logins/CAPTCHAs or submit applications outside authorized group rules."
+    bulletin: "Group room for OnlineJobs.ph scouting and guided applications via the shared tracker. Coordinate across Job Scout 1-3, Concierge, and Second Brain; enforce multi-page scouting, strict no-calls filtering, and the 1-3 Apply Points policy (halt on employer-specified AP or if projected balance <= 10). Never bypass logins/CAPTCHAs or submit applications outside authorized group rules."
     defaultResponder:
       kind: agent
       agent: job-scout
@@ -607,7 +575,7 @@ examples:
 
 # Personal Assistant, MPOR & Job Scout Crew
 
-Run daily priorities, progress reports, MPOR/SPOR forms, inbox, notes, and job hunting with a 7-agent personal desk.
+Run daily priorities, progress reports, MPOR/SPOR forms, inbox, notes, and job hunting with a 9-agent personal desk.
 
 > **Give this file to your Chief of Staff.** It is the complete team blueprint. Any agent system can run it; OpenMausBot can also install it directly via **Teams -> Import**.
 
@@ -619,7 +587,7 @@ Never request pasted passwords or secret keys. Use the platform's normal connect
 
 ## Mission
 
-A 7-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting.
+A 9-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting.
 
 ## Outcomes
 
@@ -727,7 +695,7 @@ General updates and Kanban drafts go to Daily Progress Reporter; workplace forms
 
 ### OnlineJobs.ph Scout and Auto Apply
 
-**Members:** `job-scout`, `job-scout-2`, `job-scout-3`, `job-scout-4`, `job-scout-5`, `concierge`, `second-brain`
+**Members:** `job-scout`, `job-scout-2`, `job-scout-3`, `concierge`, `second-brain`
 
 **Default responder:** `job-scout`
 

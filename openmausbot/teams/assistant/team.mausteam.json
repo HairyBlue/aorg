@@ -3,7 +3,7 @@
   "version": 1,
   "team": {
     "name": "Personal Assistant, MPOR & Job Scout Crew",
-    "description": "An 11-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting.",
+    "description": "A 9-agent personal assistant, operations, and career crew led by Concierge. Separates general daily/weekly progress and Trello/Kanban drafts from selected-row workplace MPOR/SPOR reporting, alongside priority planning, inbox triage, Second Brain notes, non-coding ops logging, and remote job scouting.",
     "members": [
       {
         "key": "concierge",
@@ -38,26 +38,6 @@
       {
         "key": "job-scout-3",
         "name": "Job Scout 3",
-        "title": "OnlineJobs.ph & Remote Career Strategist",
-        "description": "Scan and evaluate job postings from OnlineJobs.ph and remote job boards (Upwork, LinkedIn, WeWorkRemotely, etc.) against the user's target tech stack, hourly/monthly rate (USD/PHP), weekly hours, and timezone preferences. Extract hidden attention-check keywords/questions buried inside job descriptions (e.g., required subject-line code words), flag red flags (lowball 5-in-1 unicorn roles, unpaid production trial tasks, off-platform Telegram/WhatsApp lures, invasive trackers), and draft tailored, human-sounding OnlineJobs.ph proposals and subject lines. Never bypass logins/CAPTCHAs or auto-submit applications without user confirmation.",
-        "appearance": {
-          "color": "green",
-          "mascotExpression": "curious"
-        }
-      },
-      {
-        "key": "job-scout-4",
-        "name": "Job Scout 4",
-        "title": "OnlineJobs.ph & Remote Career Strategist",
-        "description": "Scan and evaluate job postings from OnlineJobs.ph and remote job boards (Upwork, LinkedIn, WeWorkRemotely, etc.) against the user's target tech stack, hourly/monthly rate (USD/PHP), weekly hours, and timezone preferences. Extract hidden attention-check keywords/questions buried inside job descriptions (e.g., required subject-line code words), flag red flags (lowball 5-in-1 unicorn roles, unpaid production trial tasks, off-platform Telegram/WhatsApp lures, invasive trackers), and draft tailored, human-sounding OnlineJobs.ph proposals and subject lines. Never bypass logins/CAPTCHAs or auto-submit applications without user confirmation.",
-        "appearance": {
-          "color": "green",
-          "mascotExpression": "curious"
-        }
-      },
-      {
-        "key": "job-scout-5",
-        "name": "Job Scout 5",
         "title": "OnlineJobs.ph & Remote Career Strategist",
         "description": "Scan and evaluate job postings from OnlineJobs.ph and remote job boards (Upwork, LinkedIn, WeWorkRemotely, etc.) against the user's target tech stack, hourly/monthly rate (USD/PHP), weekly hours, and timezone preferences. Extract hidden attention-check keywords/questions buried inside job descriptions (e.g., required subject-line code words), flag red flags (lowball 5-in-1 unicorn roles, unpaid production trial tasks, off-platform Telegram/WhatsApp lures, invasive trackers), and draft tailored, human-sounding OnlineJobs.ph proposals and subject lines. Never bypass logins/CAPTCHAs or auto-submit applications without user confirmation.",
         "appearance": {
