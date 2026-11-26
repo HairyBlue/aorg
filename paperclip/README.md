@@ -25,3 +25,7 @@ docs/                       Installation and general maintainer/user guides
 ```
 
 The team files are kept at the archive root: when distributing a team ZIP, include `.paperclip.yaml`, `COMPANY.md`, `agents/`, and the four support documents directly, not an extra enclosing repository directory.
+
+## Shared Skill References
+
+- `business/sop-and-process-builder` Reference Case 1 (E-Commerce Customer Support SOP & Miro Decision-Tree): [`openmausbot/teams/business/skills/sop-and-process-builder/references/case-1/README.md`](../openmausbot/teams/business/skills/sop-and-process-builder/references/case-1/README.md) (synced from ACON `.agents/skills/business/sop-and-process-builder/references/case-1/README.md`).

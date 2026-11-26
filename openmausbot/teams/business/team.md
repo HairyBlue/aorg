@@ -129,7 +129,7 @@ playbooks:
       - document process
       - checklist
       - loom transcript
-    instructions: "Structure every SOP with: (1) Objective & Owner, (2) Tools / Access Needed, (3) Step-by-Step Instructions (one action per step), (4) Quality Checklist / Definition of Done, and (5) Troubleshooting / Escalation Rule."
+    instructions: "Structure every SOP with: (1) Objective & Owner, (2) Tools / Access Needed, (3) Step-by-Step Instructions (one action per step), (4) Quality Checklist / Definition of Done, and (5) Troubleshooting / Escalation Rule. For complex branching workflows (such as multi-market customer support), pair the SOP with a Mermaid flowchart TD decision tree and explicit logging/escalation gates (see skills/sop-and-process-builder/references/case-1/README.md)."
   - key: client-delivery-and-scope
     name: Client Status Update & Scope Guard
     summary: Draft clear weekly client updates and polite change-request options when out-of-scope requests arrive.

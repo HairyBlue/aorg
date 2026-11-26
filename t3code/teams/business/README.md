@@ -17,3 +17,6 @@ A 4-agent business and client operations crew led by Ops Director. Turns messy p
 | `sop-architect` | **SOP Architect** | Process & Documentation Specialist | Specialist | [`bots/sop-architect.md`](bots/sop-architect.md) |
 | `client-success` | **Client Success** | Account, Retainer & Scope Manager | Specialist | [`bots/client-success.md`](bots/client-success.md) |
 | `market-intel` | **Market Intel** | Competitor, Pricing & Spend Analyst | Specialist | [`bots/market-intel.md`](bots/market-intel.md) |
+
+## SOP References
+- [`sop-and-process-builder/references/case-1/README.md`](../../openmausbot/teams/business/skills/sop-and-process-builder/references/case-1/README.md) — Reference Case 1: E-Commerce Customer Support SOP & Miro Decision-Tree (Mermaid flowcharts + dual-sheet logging).

@@ -32,6 +32,7 @@ When the user asks to *"invite Frontend, Backend, Tech SEO, and Content Writer t
 ### 3. Cross-Project Coordination
 - Route project-specific work to that project's **Head** or specialist thread via `t3_thread_send` + `t3_thread_wait`.
 - Do **not** edit project code or run builds directly from the Global Orchestrator thread when a Project Head or specialist bot is available—delegate and synthesize.
+- Project Heads operate in coordinator mode by default: they delegate to active crew threads (`t3_thread_list` -> `t3_thread_send` + `t3_thread_wait`) and only execute directly if explicitly told by the user. If a needed specialist thread is missing from the project, the Project Head escalates to the Global Orchestrator (or the user, if no Orchestrator is active) to decide whether to invite that specialist or handle it directly.
 
 ---
 
