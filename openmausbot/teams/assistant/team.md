@@ -255,7 +255,7 @@ rooms:
       - job-scout-5
       - concierge
       - second-brain
-    bulletin: "Group room for OnlineJobs.ph scouting and guided applications. Coordinate across Job Scout 1-5, Concierge, and Second Brain; verify Apply Points before any submission and never submit applications without explicit user approval."
+    bulletin: "Group room for OnlineJobs.ph scouting and guided applications via the shared tracker. Coordinate across Job Scout 1-5, Concierge, and Second Brain; enforce multi-page scouting, strict no-calls filtering, and the 1-3 Apply Points policy (halt on employer-specified AP or if projected balance <= 10). Never bypass logins/CAPTCHAs or submit applications outside authorized group rules."
     defaultResponder:
       kind: agent
       agent: job-scout
@@ -335,19 +335,12 @@ routines:
   - key: daily-olj-scout-auto-apply
     name: Daily OnlineJobs.ph Scout and Auto Apply
     agent: job-scout
-    prompt: "Scout OnlineJobs.ph postings against the user's verified profile and target criteria, verify Apply Points balance before any application step, prepare tailored anti-AI-slop drafts with exact URLs and any required attention-check keywords, and log results to the shared tracker. Never bypass logins/CAPTCHAs or submit applications without explicit user approval."
+    prompt: "Execute the complete scouting and application workflow defined in the group \"OnlineJobs.ph Scout and Auto Apply\". Read and strictly follow the group's latest instructions, check the shared persistent tracker, verify no duplicate applications, confirm employer instructions and Apply Points policy (1-3 AP by fit; never auto-apply when the employer specifies AP or when projected remaining balance would be 10 or fewer), pause and alert on human-intervention items while continuing other eligible jobs, and send a summary of results, remaining Apply Points, skipped jobs, and pending actions."
     runOn: maus
     schedule:
-      type: daily
-      time: "02:00"
-      weekdays:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
-        - 6
+      type: cron
+      expression: "0 23,1,3,5,7 * * *"
+      timeZone: "Asia/Manila"
     durationMinutes: 30
     overlap: skip
     enabledAfterInstall: false
@@ -732,6 +725,14 @@ Dedicated room for scouting OnlineJobs.ph and remote job postings, catching hidd
 
 General updates and Kanban drafts go to Daily Progress Reporter; workplace forms go to MPOR Reporter. Share one approved inventory without duplicate counts.
 
+### OnlineJobs.ph Scout and Auto Apply
+
+**Members:** `job-scout`, `job-scout-2`, `job-scout-3`, `job-scout-4`, `job-scout-5`, `concierge`, `second-brain`
+
+**Default responder:** `job-scout`
+
+Group room for OnlineJobs.ph scouting and guided applications via the shared tracker, enforcing multi-page scouting, strict no-calls filtering, and the 1–3 Apply Points policy (>10 AP reserve).
+
 ## Suggested routines
 
 ### Morning priority & schedule briefing
@@ -752,6 +753,16 @@ General updates and Kanban drafts go to Daily Progress Reporter; workplace forms
 ### Friday MPOR/SPOR rollup
 **Owner:** `mpor-reporter`  
 **Schedule:** 16:30 on weekdays 5  
+**Initial state:** paused — the user must enable it
+
+### Daily OnlineJobs.ph Scout
+**Owner:** `job-scout`  
+**Schedule:** Every 150 minutes  
+**Initial state:** paused — the user must enable it
+
+### Daily OnlineJobs.ph Scout and Auto Apply
+**Owner:** `job-scout` (group: `OnlineJobs.ph Scout and Auto Apply`)  
+**Schedule:** 11:00 PM, 1:00 AM, 3:00 AM, 5:00 AM, and 7:00 AM (`0 23,1,3,5,7 * * *`, `Asia/Manila`)  
 **Initial state:** paused — the user must enable it
 
 ## Playbooks
