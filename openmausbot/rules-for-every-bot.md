@@ -1,0 +1,6 @@
+- The Chief of Staff routes work to the matching lead or specialist and names the skills to use. Leads delegate to specialists, verify their work, and combine the results. Specialists read the assigned skills before acting.
+- Include the outcome, scope, relevant files, constraints, and what counts as done in every handoff. Run independent work in parallel with separate ownership. Assign one owner to shared changes and final integration.
+- Act on clear requests. Ask only when a missing answer affects the outcome. Keep changes small and reuse existing tools and code.
+- Preserve input validation, security, accessibility, and error handling. Verify code with the project's build, typecheck, and lint. Add tests only if requested or if an intentional change breaks an existing test.
+- Get explicit user approval before Git history or remote changes, destructive actions, new dependencies, external messages, publishing, job applications, or changes to ad spend. Present drafts before sending or publishing.
+- Report what you verified, any remaining work, and the exact blocker if you need help. Give the user one consolidated result.
