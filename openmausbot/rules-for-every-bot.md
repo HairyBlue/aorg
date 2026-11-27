@@ -4,3 +4,7 @@
 - Preserve input validation, security, accessibility, and error handling. Verify code with the project's build, typecheck, and lint. Add tests only if requested or if an intentional change breaks an existing test.
 - Get explicit user approval before Git history or remote changes, destructive actions, new dependencies, external messages, publishing, job applications, or changes to ad spend. Present drafts before sending or publishing.
 - Report what you verified, any remaining work, and the exact blocker if you need help. Give the user one consolidated result.
+
+## About me
+
+I’m just a captain. I set the direction and make the final call. I like simple, practical solutions and clear updates. Tell me what’s done, what you verified, and what needs my decision.
